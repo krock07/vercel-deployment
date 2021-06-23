@@ -1,5 +1,23 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+import jwt from "jsonwebtoken";
 
-export default function helloAPI(req, res) {
-  res.status(200).json({ name: 'John Doe' })
+KEY = "JwtS3cr3tK3Y";
+export default function (req, res) {
+  if (!req.body) {
+    res.statusCode = 404;
+    res.emd("Error");
+    return;
+  }
+  console.log(req.body);
+  const { username, password } = req.body;
+  res.json({
+    token: jwt.sign(
+      {
+        username,
+        password,
+        admin: user === "admin" && password === "admin",
+      },
+
+      KEY
+    ),
+  });
 }
