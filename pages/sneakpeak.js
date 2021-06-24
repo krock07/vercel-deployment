@@ -106,8 +106,46 @@ export default function sneakpeak() {
 							</div>
 						</ul>
 					</div>
-					<div className=" mt-20 md:m-0 md:flex md:mx-auto md:w-9/12 md:justify-around md:flex-wrap">
-						<div className="flex md:bg-[#eaf1f7]"></div>
+					<div className="flex space-y-8 mt-20 md:m-0 md:flex md:mx-auto md:w-9/12 md:justify-around md:flex-wrap">
+						{/* rectangle 1 */}
+						<div className="flex bg-[#eaf1f7] w-[888px] h-[386px] bg-opacity-30 rounded-[20px]">
+							<p>test</p>
+						</div>
+
+						{/* rectangle 2 */}
+						<div className="flex bg-[#eca413] w-[888px] h-[471px] bg-opacity-[0.06] rounded-[20px]">
+							<p>test</p>
+						</div>
+
+						{/* rectangle 3 */}
+						<div className="flex bg-[#f2762f] w-[888px] h-[386px] bg-opacity-[0.06] rounded-[20px]">
+							<p>test</p>
+						</div>
+
+						{/* rectangle 4 */}
+						<div className="flex bg-[#eaf1f7] w-[888px] h-[386px] bg-opacity-30 rounded-[20px]">
+							<p>test</p>
+						</div>
+
+						{/* rectangle 5 */}
+						<div className="flex bg-[#eca413] w-[888px] h-[386px] bg-opacity-[0.06] rounded-[20px]">
+							<p>test</p>
+						</div>
+
+						{/* rectangle 6 */}
+						<div className="flex bg-[#f2762f] w-[888px] h-[386px] bg-opacity-[0.06] rounded-[20px]">
+							<p>test</p>
+						</div>
+
+						{/* rectangle 7 */}
+						<div className="flex bg-[#eaf1f7] w-[888px] h-[386px] bg-opacity-30 rounded-[20px]">
+							<p>test</p>
+						</div>
+
+						{/* rectangle 8 */}
+						<div className="flex bg-[#eca413] w-[888px] h-[386px] bg-opacity-[0.06] rounded-[20px]">
+							<p>test</p>
+						</div>
 					</div>
 				</div>
 			</div>
