@@ -112,42 +112,82 @@ export default function sneakpeak() {
 					<div className="flex flex-col space-y-8 md:mb-6 mt-20 md:m-0 md:flex md:mx-auto md:w-9/12">
 						{/* rectangle 1 */}
 						<div className="flex bg-[#eaf1f7] w-[888px] h-[386px] bg-opacity-30 rounded-[20px]">
+							<img
+								src="/sneakPeakImages/Mask Group.png"
+								alt=""
+								className="w-[362px] h-[386px]"
+							/>
 							<p>test</p>
 						</div>
 
 						{/* rectangle 2 */}
 						<div className="flex bg-[#eca413] w-[888px] h-[471px] bg-opacity-[0.06] rounded-[20px]">
 							<p>test</p>
+							<img
+								src="/sneakPeakImages/Mask Group2.png"
+								alt=""
+								className="w-[482px] h-[471px]"
+							/>
 						</div>
 
 						{/* rectangle 3 */}
 						<div className="flex bg-[#f2762f] w-[888px] h-[386px] bg-opacity-[0.06] rounded-[20px]">
+							<img
+								src="/sneakPeakImages/Group 1965.png"
+								alt=""
+								className="w-[362px] h-[386px]"
+							/>
 							<p>test</p>
 						</div>
 
 						{/* rectangle 4 */}
 						<div className="flex bg-[#eaf1f7] w-[888px] h-[386px] bg-opacity-30 rounded-[20px]">
 							<p>test</p>
+							<img
+								src="/sneakPeakImages/Mask Group4.png"
+								alt=""
+								className="w-[482px] h-[386px]"
+							/>
 						</div>
 
 						{/* rectangle 5 */}
 						<div className="flex bg-[#eca413] w-[888px] h-[386px] bg-opacity-[0.06] rounded-[20px]">
+							<img
+								src="/sneakPeakImages/Mask Group5.png"
+								alt=""
+								className="w-[362px] h-[386px]"
+							/>
 							<p>test</p>
 						</div>
 
 						{/* rectangle 6 */}
 						<div className="flex bg-[#f2762f] w-[888px] h-[386px] bg-opacity-[0.06] rounded-[20px]">
 							<p>test</p>
+							<img
+								src="/sneakPeakImages/Mask Group6.png"
+								alt=""
+								className="w-[395px] h-[386px]"
+							/>
 						</div>
 
 						{/* rectangle 7 */}
 						<div className="flex bg-[#eaf1f7] w-[888px] h-[386px] bg-opacity-30 rounded-[20px]">
+							<img
+								src="/sneakPeakImages/Mask Group7.png"
+								alt=""
+								className="w-[395px] h-[386px]"
+							/>
 							<p>test</p>
 						</div>
 
 						{/* rectangle 8 */}
 						<div className="flex bg-[#eca413] w-[888px] h-[386px] bg-opacity-[0.06] rounded-[20px]">
 							<p>test</p>
+							<img
+								src="/sneakPeakImages/Mask Group8.png"
+								alt=""
+								className="w-[482px] h-[386px]"
+							/>
 						</div>
 					</div>
 				</div>
