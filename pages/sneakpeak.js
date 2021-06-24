@@ -106,7 +106,7 @@ export default function sneakpeak() {
 							</div>
 						</ul>
 					</div>
-					<div className="flex space-y-8 mt-20 md:m-0 md:flex md:mx-auto md:w-9/12 md:justify-around md:flex-wrap">
+					<div className="flex flex-col space-y-8 md:mb-6 mt-20 md:m-0 md:flex md:mx-auto md:w-9/12">
 						{/* rectangle 1 */}
 						<div className="flex bg-[#eaf1f7] w-[888px] h-[386px] bg-opacity-30 rounded-[20px]">
 							<p>test</p>
