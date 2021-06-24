@@ -1,9 +1,7 @@
 import React, {useState, useEffect} from "react";
-import axios from "axios";
 import {Credentials} from "../components/Credentials";
 import SignInLayout from "../components/SignInLayout";
-import image from "next/image";
-import {FiShare2, FiFastForward} from "react-icons/fi";
+import {FiFastForward} from "react-icons/fi";
 import {useRouter} from "next/router";
 import {RiTwitterLine} from "react-icons/ri";
 import {HiOutlineMicrophone} from "react-icons/hi";
@@ -75,6 +73,11 @@ export default function sneakpeak() {
 				<h1 className=" relative top-28 ml-5 md:top-[-28px] md:left-60 xl:left-0  xl:top-[3px] xl:ml-[30rem] md:text-[20px] md:font-medium pb-6">
 					Sneak Peak
 				</h1>
+				<img
+					src="/sneakPeakImages/search.png"
+					alt=""
+					className="w-[30px] h-[30px] absolute top-[320px] left-[1320px]"
+				/>
 
 				<div className=" flex  flex-col md:pl-6 md:flex md:flex-row  xl:pl-40">
 					<div className="  flex md:bg-[#eaf1f7] md:w-[216px] xl:w-[278px] md:h-[344px] md:rounded-[20px] md:items-center md:flex-col xl:flex xl:flex-col xl:items-center md:bg-opacity-30">
