@@ -117,12 +117,20 @@ export default function sneakpeak() {
 								alt=""
 								className="w-[362px] h-[386px]"
 							/>
-							<p>test</p>
+							<div className="md:w-[334px] md:h-[68px]">
+								<p className="font-bold text-[24px] leading-[34px] text-[#057176] tracking-[0.02]">
+									Join audio conversations on the ave
+								</p>
+							</div>
 						</div>
 
 						{/* rectangle 2 */}
 						<div className="flex bg-[#eca413] w-[888px] h-[471px] bg-opacity-[0.06] rounded-[20px]">
-							<p>test</p>
+							<section>
+								<p className="font-bold text-[24px] leading-[34px] text-[#eca413] tracking-[0.02]">
+									Share your authentic self with your profile
+								</p>
+							</section>
 							<img
 								src="/sneakPeakImages/Mask Group2.png"
 								alt=""
@@ -137,12 +145,20 @@ export default function sneakpeak() {
 								alt=""
 								className="w-[362px] h-[386px]"
 							/>
-							<p>test</p>
+							<div className="md:w-[344px] md:h-[68px]">
+								<p className="font-bold text-[24px] leading-[34px] text-[#f2762f] tracking-[0.02]">
+									Share your conversations on social media
+								</p>
+							</div>
 						</div>
 
 						{/* rectangle 4 */}
 						<div className="flex bg-[#eaf1f7] w-[888px] h-[386px] bg-opacity-30 rounded-[20px]">
-							<p>test</p>
+							<div className="md:w-[306px] md:h-[102px]">
+								<p className="font-bold text-[24px] leading-[34px] text-[#057176] tracking-[0.02]">
+									Earn points and rewards for being a community advocate
+								</p>
+							</div>
 							<img
 								src="/sneakPeakImages/Mask Group4.png"
 								alt=""
@@ -157,12 +173,20 @@ export default function sneakpeak() {
 								alt=""
 								className="w-[362px] h-[386px]"
 							/>
-							<p>test</p>
+							<div className="md:w-[344px] md:h-[34px]">
+								<p className="font-bold text-[24px] leading-[34px] text-[#eca413] tracking-[0.02]">
+									Connect with your people
+								</p>
+							</div>
 						</div>
 
 						{/* rectangle 6 */}
 						<div className="flex bg-[#f2762f] w-[888px] h-[386px] bg-opacity-[0.06] rounded-[20px]">
-							<p>test</p>
+							<div className="md:w-[334px] md:h-[68px]">
+								<p className="font-bold text-[24px] leading-[34px] text-[#f2762f] tracking-[0.02]">
+									Schedule conversations for later
+								</p>
+							</div>
 							<img
 								src="/sneakPeakImages/Mask Group6.png"
 								alt=""
@@ -177,12 +201,20 @@ export default function sneakpeak() {
 								alt=""
 								className="w-[395px] h-[386px]"
 							/>
-							<p>test</p>
+							<div className="md:w-[344px] md:h-[68px]">
+								<p className="font-bold text-[24px] leading-[34px] text-[#057176] tracking-[0.02] font-sans">
+									Chat with your people in real time
+								</p>
+							</div>
 						</div>
 
 						{/* rectangle 8 */}
 						<div className="flex bg-[#eca413] w-[888px] h-[386px] bg-opacity-[0.06] rounded-[20px]">
-							<p>test</p>
+							<div className="md:w-[344px] md:h-[68px]">
+								<p className="font-bold text-[24px] leading-[34px] text-[#eca413] tracking-[0.02]">
+									Share your take aways from great experiences
+								</p>
+							</div>
 							<img
 								src="/sneakPeakImages/Mask Group8.png"
 								alt=""
