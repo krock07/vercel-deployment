@@ -49,7 +49,7 @@ export default function sneakpeak() {
 			setUser(loggedInUser);
 			console.log(user);
 		}
-	});
+	}, []);
 
 	return (
 		<SignInLayout>
@@ -111,25 +111,53 @@ export default function sneakpeak() {
 					</div>
 					<div className="flex flex-col space-y-8 md:mb-6 mt-20 md:m-0 md:flex md:mx-auto md:w-9/12">
 						{/* rectangle 1 */}
-						<div className="flex bg-[#eaf1f7] w-[888px] h-[386px] bg-opacity-30 rounded-[20px]">
+						<div className="flex space-x-5 justify-center bg-[#eaf1f7] w-[888px] h-[386px] bg-opacity-30 rounded-[20px]">
 							<img
 								src="/sneakPeakImages/Mask Group.png"
 								alt=""
 								className="w-[362px] h-[386px]"
 							/>
-							<div className="md:w-[334px] md:h-[68px]">
-								<p className="font-bold text-[24px] leading-[34px] text-[#057176] tracking-[0.02]">
+							<div className="flex self-center md:w-[344px] md:h-[68px]">
+								<p className="font-bold text-[24px] leading-[34px] text-[#057176] tracking-[0.02em]">
 									Join audio conversations on the ave
 								</p>
 							</div>
 						</div>
 
 						{/* rectangle 2 */}
-						<div className="flex bg-[#eca413] w-[888px] h-[471px] bg-opacity-[0.06] rounded-[20px]">
-							<section>
-								<p className="font-bold text-[24px] leading-[34px] text-[#eca413] tracking-[0.02]">
-									Share your authentic self with your profile
-								</p>
+						<div className="flex items-center justify-end bg-[#eca413] w-[888px] h-[471px] bg-opacity-[0.06] rounded-[20px]">
+							<section className="flex md:mb-48 flex-col w-[330px] h-[68px]">
+								<div className="md:w-[306px] md:h-[68px] md:mb-6">
+									<p className="font-bold text-[24px] leading-[34px] text-[#eca413] tracking-[0.02em]">
+										Share your authentic self with your profile
+									</p>
+								</div>
+								<ul className="space-y-4 font-medium text-[16px] leading-[24px] tracking-[0.02em]">
+									<li className="flex space-x-4">
+										<span className="text-[17px] leading-[24px]">🎨 </span>
+										<div className="inline-block align-text-bottom md:w-[159px] md:h-[24px]">
+											<p>Share your intrest</p>
+										</div>
+									</li>
+									<li className="flex space-x-4">
+										<span className="text-[16px] leading-[16px]">💬 </span>
+										<div className="md:w-[301px] md:h-[24px]">
+											<p>Show your personality with prompts</p>
+										</div>
+									</li>
+									<li className="flex space-x-4">
+										<span className="text-[16px] leading-[16px]">😎 </span>
+										<div className="md:w-[249px] md:h-[48px]">
+											<p>Connect your instagram, twitter, and spotify</p>
+										</div>
+									</li>
+									<li className="flex space-x-4">
+										<span className="text-[17px] leading-[24px]">🚀 </span>
+										<div className="md:w-[186px] md:h-[24px]">
+											<p>Share your takeaways</p>
+										</div>
+									</li>
+								</ul>
 							</section>
 							<img
 								src="/sneakPeakImages/Mask Group2.png"
@@ -139,23 +167,23 @@ export default function sneakpeak() {
 						</div>
 
 						{/* rectangle 3 */}
-						<div className="flex bg-[#f2762f] w-[888px] h-[386px] bg-opacity-[0.06] rounded-[20px]">
+						<div className="flex space-x-5 justify-center bg-[#f2762f] w-[888px] h-[386px] bg-opacity-[0.06] rounded-[20px]">
 							<img
 								src="/sneakPeakImages/Group 1965.png"
 								alt=""
 								className="w-[362px] h-[386px]"
 							/>
-							<div className="md:w-[344px] md:h-[68px]">
-								<p className="font-bold text-[24px] leading-[34px] text-[#f2762f] tracking-[0.02]">
+							<div className="flex self-center md:w-[344px] md:h-[68px]">
+								<p className="font-bold text-[24px] leading-[34px] text-[#f2762f] tracking-[0.02em]">
 									Share your conversations on social media
 								</p>
 							</div>
 						</div>
 
 						{/* rectangle 4 */}
-						<div className="flex bg-[#eaf1f7] w-[888px] h-[386px] bg-opacity-30 rounded-[20px]">
-							<div className="md:w-[306px] md:h-[102px]">
-								<p className="font-bold text-[24px] leading-[34px] text-[#057176] tracking-[0.02]">
+						<div className="flex justify-end bg-[#eaf1f7] w-[888px] h-[386px] bg-opacity-30 rounded-[20px]">
+							<div className="flex self-center md:w-[306px] md:h-[102px]">
+								<p className="font-bold text-[24px] leading-[34px] text-[#057176] tracking-[0.02em]">
 									Earn points and rewards for being a community advocate
 								</p>
 							</div>
@@ -167,23 +195,23 @@ export default function sneakpeak() {
 						</div>
 
 						{/* rectangle 5 */}
-						<div className="flex bg-[#eca413] w-[888px] h-[386px] bg-opacity-[0.06] rounded-[20px]">
+						<div className="flex space-x-5 justify-center bg-[#eca413] w-[888px] h-[386px] bg-opacity-[0.06] rounded-[20px]">
 							<img
 								src="/sneakPeakImages/Mask Group5.png"
 								alt=""
 								className="w-[362px] h-[386px]"
 							/>
-							<div className="md:w-[344px] md:h-[34px]">
-								<p className="font-bold text-[24px] leading-[34px] text-[#eca413] tracking-[0.02]">
+							<div className="flex self-center md:w-[344px] md:h-[34px]">
+								<p className="font-bold text-[24px] leading-[34px] text-[#eca413] tracking-[0.02em]">
 									Connect with your people
 								</p>
 							</div>
 						</div>
 
 						{/* rectangle 6 */}
-						<div className="flex bg-[#f2762f] w-[888px] h-[386px] bg-opacity-[0.06] rounded-[20px]">
-							<div className="md:w-[334px] md:h-[68px]">
-								<p className="font-bold text-[24px] leading-[34px] text-[#f2762f] tracking-[0.02]">
+						<div className="flex space-x-5 justify-center bg-[#f2762f] w-[888px] h-[386px] bg-opacity-[0.06] rounded-[20px]">
+							<div className="flex self-center md:w-[334px] md:h-[68px]">
+								<p className="font-bold text-[24px] leading-[34px] text-[#f2762f] tracking-[0.02em]">
 									Schedule conversations for later
 								</p>
 							</div>
@@ -195,24 +223,24 @@ export default function sneakpeak() {
 						</div>
 
 						{/* rectangle 7 */}
-						<div className="flex bg-[#eaf1f7] w-[888px] h-[386px] bg-opacity-30 rounded-[20px]">
+						<div className="flex space-x-5 justify-center bg-[#eaf1f7] w-[888px] h-[386px] bg-opacity-30 rounded-[20px]">
 							<img
 								src="/sneakPeakImages/Mask Group7.png"
 								alt=""
 								className="w-[395px] h-[386px]"
 							/>
-							<div className="md:w-[344px] md:h-[68px]">
-								<p className="font-bold text-[24px] leading-[34px] text-[#057176] tracking-[0.02] font-sans">
+							<div className="flex self-center md:w-[344px] md:h-[68px]">
+								<p className="font-bold text-[24px] leading-[34px] text-[#057176] tracking-[0.02em] font-sans">
 									Chat with your people in real time
 								</p>
 							</div>
 						</div>
 
 						{/* rectangle 8 */}
-						<div className="flex bg-[#eca413] w-[888px] h-[386px] bg-opacity-[0.06] rounded-[20px]">
-							<div className="md:w-[344px] md:h-[68px]">
-								<p className="font-bold text-[24px] leading-[34px] text-[#eca413] tracking-[0.02]">
-									Share your take aways from great experiences
+						<div className="flex justify-end bg-[#eca413] w-[888px] h-[386px] bg-opacity-[0.06] rounded-[20px]">
+							<div className="flex self-center md:w-[306px] md:h-[68px]">
+								<p className="font-bold text-[24px] leading-[34px] text-[#eca413] tracking-[0.02em]">
+									Share your takeaways from great experiences
 								</p>
 							</div>
 							<img
