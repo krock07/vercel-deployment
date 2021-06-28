@@ -4,8 +4,8 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <div className="bg-[#057176] h-[869px] w-full md:h-[584px]">
-      <div className="md:flex md:pt-8 pb-6">
-        <div className="flex-col flex justify-between items-center md:items-start md:ml-7 md:max-w-sm xl:ml-40">
+      <div className="md:flex md:pt-8 pb-6 ">
+        <div className="   flex-col flex justify-between items-center md:items-start md:ml-7 md:max-w-sm xl:ml-40">
           <div className="py-7 items-center lg:w-[639px] lg:mt-16">
             <h1 className="text-[26px] font-bold text-white max-w-[317px] md:text-2xl   lg:max-w-[600px]   ">
               Join the community on Seventh Ave today!
@@ -17,18 +17,20 @@ const Footer = () => {
               Blackness in all its forms.
             </p>
           </div>
-          <div className="flex w-full justify-around pb-16 mx-auto md:justify-between ">
+          <div className="flex w-full justify-around pb-16 mx-auto md:justify-between  ">
             <Link href="/signup">
               <button className="bg-[#f2762f] w-[154px] h-[44px] rounded-[16px] text-sm text-white cursor-pointer">
                 Get Started
               </button>
             </Link>
-            <button className="bg-none border-white border w-[154px] h-[44px] rounded-[16px] text-sm text-white cursor-pointer">
-              FAQs
-            </button>
+            <Link href="/faqs">
+              <button className="relative z-50 bg-none border-white border w-[154px] h-[44px] rounded-[16px] text-sm text-white cursor-pointer">
+                FAQs
+              </button>
+            </Link>
           </div>
         </div>
-        <div className=" w-auto ml-6 absolute  md:mt-8 md:z-50 lg:mt-0 lg:ml-32 xl:ml-[359px] overflow-hidden">
+        <div className=" w-auto ml-6 absolute  md:mt-8 md:z-10 lg:mt-0 lg:ml-32 xl:ml-[359px] overflow-hidden">
           <img
             src="/footer.png"
             alt=""

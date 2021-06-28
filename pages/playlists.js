@@ -10,12 +10,18 @@ import { HiOutlineMicrophone } from "react-icons/hi";
 import { GrDocumentText } from "react-icons/gr";
 import { GiMagnifyingGlass } from "react-icons/gi";
 import { IoDocumentTextOutline } from "react-icons/io5";
-
+import querystring from "querystring";
+import SeventhPlaylist from "../components/SeventhPlaylist";
+import useSWR from "swr";
+import fetcher from "../middleware/utilities";
 import Link from "next/link";
 import { searchUser } from "../middleware/utilities";
 
+const client_id = process.env.SPOTIFY_CLIENT_ID;
+const client_secret = process.env.SPOTIFY_CLIENT_SECRET;
+const refresh_token = process.env.SPOTIFY_REFRESH_TOKEN;
+
 const podcast = () => {
-  const cred = Credentials();
   const router = useRouter();
   const links = [
     {
@@ -45,8 +51,6 @@ const podcast = () => {
     },
   ];
 
-  const [podcasts, setPodcasts] = useState([]);
-  const [token, setToken] = useState("");
   const [user, setUser] = useState();
 
   useEffect(() => {
@@ -55,36 +59,57 @@ const podcast = () => {
       setUser(loggedInUser);
       console.log(user);
     }
-    axios("https://accounts.spotify.com/api/token", {
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-        Authorization: "Basic " + btoa(cred.ClientId + ":" + cred.ClientSecret),
-      },
-      data: "grant_type=client_credentials",
-      method: "POST",
-    }).then((tokenResponse) => {
-      console.log(tokenResponse.data.access_token);
-      setToken(tokenResponse.data.access_token);
+  }, []);
+  //   const [token, setToken] = useState("");
+  //   const [playlist, setPlaylist] = useState([]);
 
-      axios(
-        "https://api.spotify.com/v1/shows?ids=2S4tSSlT71Z5i8Dt1vlDJc%2C6gcw7EF2i70vXXXJnhBNgA%2C0nMF1JL5tNJW7B0teIFWxV%2C1CtRqrNGqpAttWyft6nVss%2C3Cdge5G5apw1LsC8jGcl4j%2C7ohkV2D7vX8ISlHdwN7lPB%2C71qcFqfm1Y5PAQ6tUonLR3%2C3n5hEIVLquNRPipeKTFJOi%2C5r41MwHqXBXxR87L3Qi41t&market=US",
-        {
-          method: "GET",
-          headers: {
-            Authorization: "Bearer " + tokenResponse.data.access_token,
-          },
-        }
-      ).then((podcastResponse) => {
-        console.log(podcastResponse.data);
-        console.log(podcastResponse);
+  //   useEffect(() => {
+  //     const loggedInUser = JSON.parse(localStorage.getItem("user"));
+  //     if (loggedInUser) {
+  //       setUser(loggedInUser);
+  //       console.log(user);
+  //     }
 
-        // setPodcasts({ listOfPodcastFromAPI: podcastResponse.data.shows });
-        setPodcasts(podcastResponse.data.shows);
-      });
-    });
-  }, [cred.ClientId, cred.ClientSecret]);
+  //     // let parsed = querystring.parse(window.location.search);
+  //     // let accessToken = parsed.access_token;
+  //     // fetch("https://accounts.spotify.com/api/token", {
+  //     //   method: "POST",
+  //     //   headers: {
+  //     //     Authorization:
+  //     //       "Bearer  BQAAB8J2xRrcS2bmSFSShSfUZtUmZ5nnw4GqIZCLuL3WG1k2GV0dR3MPjiOiHCYkH1pKgbfp3gSst9TtZ71Opd_bvEOpe4Ve0xNKskJPEuMHhrvXt4Xaqm4EFcVd4e2GM08ftWQ6hvpc_VIYSDQHWsimLSLGhLDixcX9JppK5-WQlIiK-w",
+  //     //     "Content-Type": "application/x-www-form-urlencoded",
+  //     //   },
+  //     //   body: querystring.stringify({
+  //     //     grant_type: "refresh_token",
+  //     //     refresh_token: refresh_token,
+  //     //     client_id: client_id,
+  //     //   }),
+  //     // }).then((response) => response.json().then((data) => console.log(data)));
 
-  console.log(podcasts);
+  //     // fetch(
+  //     //   "https://api.spotify.com/v1/users/ic1jxo78uihuoe96dclcauhmz/playlists",
+  //     //   {
+  //     //     headers: {
+  //     //       Authorization:
+  //     //         "Bearer  BQAAB8J2xRrcS2bmSFSShSfUZtUmZ5nnw4GqIZCLuL3WG1k2GV0dR3MPjiOiHCYkH1pKgbfp3gSst9TtZ71Opd_bvEOpe4Ve0xNKskJPEuMHhrvXt4Xaqm4EFcVd4e2GM08ftWQ6hvpc_VIYSDQHWsimLSLGhLDixcX9JppK5-WQlIiK-w",
+  //     //     },
+  //     //   }
+  //     // )
+  //     //   .then((response) => response.json())
+  //     //   .then((playlistResponse) => {
+  //     //     console.log(playlistResponse.items);
+  //     //     console.log(playlistResponse);
+
+  //     //     // setplaylists({ listOfplaylistFromAPI: playlistResponse.data.shows });
+  //     //     setPlaylist(playlistResponse.items);
+  //     //   });
+  //   }, []);
+  //   console.log(playlist);
+
+  const AUTH_URL =
+    "https://accounts.spotify.com/authorize?client_id=6eb21b0156484d46b73a000f2113c546&response_type=code&redirect_uri=http://localhost:3000/playlists&scope=playlist-read-collaborative%20playlist-read-private";
+
+  //   console.log(playlist);
 
   // const test = podcasts.forEach(function (podcast) {
   //   let i = podcast.images.forEach(function (k) {
@@ -99,6 +124,11 @@ const podcast = () => {
   //       : " lg:px-6 2xl:px-10 xl:px-7 xl:mb-4 hover:text-white text-black  cursor-pointer"
   //   }`}
   // >
+  const { data } = useSWR("/api/user-playlist", fetcher);
+
+  if (!data) {
+    return null;
+  }
 
   return (
     <SignInLayout>
@@ -119,7 +149,7 @@ const podcast = () => {
         <h1 className=" ml-5  mt-10 text-[20px] xl:font-medium xl:ml-[10.5rem] relative xl:top-8 ">
           Content
         </h1>
-        <h1 className="  relative top-36 ml-5 md:top-[-28px] md:left-60 xl:left-0  xl:top-[3px] xl:ml-[30rem] md:text-[20px] md:font-medium pb-6">
+        <h1 className=" relative top-36 ml-5 md:top-[-28px] md:left-60 xl:left-0  xl:top-[3px] xl:ml-[30rem] md:text-[20px] md:font-medium pb-6">
           Keep your Ear to the Streets
         </h1>
 
@@ -135,8 +165,8 @@ const podcast = () => {
                         <li
                           className={`${
                             router.asPath === el.url
-                              ? " border-b-2  border-[#057176] lg:px-6 2xl:px-10 md:p-0 xl:px-7 md:py-[7px] md:mb-4 md:hover:text-white md:text-white md:w-[184px] cursor-pointer xl:w-[230px] h-[52px] md:bg-[#057176] md:rounded-[10px] text-sm font-normal "
-                              : "  lg:px-6 2xl:px-10 xl:px-7 md:mb-4 hover:text-[#057176] text-black font-normal  cursor-pointer"
+                              ? " border-b-2  border-[#057176] lg:px-6 2xl:px-10 md:p-0 xl:px-7 md:py-[7px] md:mb-4 md:hover:text-white md:text-white md:w-[184px] cursor-pointer xl:w-[230px] h-[52px] md:bg-[#057176] md:rounded-[10px] text-sm "
+                              : "  lg:px-6 2xl:px-10 xl:px-7 md:mb-4 hover:text-[#057176] text-black  cursor-pointer"
                           }`}
                         >
                           <div className="flex items-center mt-3">
@@ -153,36 +183,35 @@ const podcast = () => {
               </div>
             </ul>
           </div>
+          <div>{/* <a href={AUTH_URL}>login</a> */}</div>
+          {/* <SeventhPlaylist /> */}
           <div className=" mt-20 md:m-0 md:flex md:mx-auto md:w-9/12 md:justify-around md:flex-wrap">
-            {podcasts.map((item, key) => {
+            {data.playlists.map((item, key) => {
               return (
                 <div className="flex flex-col  px-6 md:p-0  md:mb-6">
                   <img
                     className="xl:w-[300px] object-cover xl:h-[300px] rounded-[20px] md:w-[200px] md:h-[200px]"
-                    src={item.images[1].url}
+                    src={item.imageUrl}
                     alt=""
                   />
                   <i class="fab fa-spotify relative bottom-[35px] left-[1rem] object-center xl:bottom-8 xl:left-3 text-[#1DB954] text-xl"></i>
                   <div className="flex justify-between xl:justify-between xl:items-center">
-                    <a
-                      className="cursor-pointer"
-                      href={item.external_urls.spotify}
-                    >
+                    <a className="cursor-pointer" href={item.songUrl}>
                       <p
                         className="text-base font-semibold overflow-ellipsis truncate max-w-[250px] md:max-w-[180px] xl:max-w-[250px]"
                         key={key}
                       >
-                        {item.name}
+                        {item.title}
                       </p>
                     </a>
 
-                    <a href={item.external_urls.spotify}>
+                    <a href={item.songUrl}>
                       <FiShare2 />
                     </a>
                   </div>
 
                   <small className=" pb-14 xl:p-0 xl:text-[13px] max-w-[250px] max-h-[50px] truncate overflow-ellipsis ">
-                    {item.total_episodes} Episodes
+                    {item.total} Tracks
                   </small>
                 </div>
               );
@@ -202,5 +231,3 @@ export default podcast;
 //   clientSecret: creds.ClientSecret,
 //   redirectUri: 'http://localhost:3000'
 // };
-
-// AQDr8KjI-_j5ehXq0q4v6PGoh6PG7lvBobKW1rvY49lLOGKczZswN-hHkuiM187c4Ww2SIoI9YuMv1NJ63Tqvo2R8twmyQkpMU2xIGFkHKtH4ASl36u7c0hIvjxzOwOlfT0pqcGrqk_x8S0nXU6BtxakngIv0e5JGEIPmOn8Wx653nxfiRFSIabEikZ_hexMaMmSwzKJPXQf_Gvvgp0iriO__Ofa779v6UT_K3w

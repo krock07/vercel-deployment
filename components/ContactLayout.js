@@ -28,8 +28,10 @@ const ContactLayout = ({
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={image} />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link rel="preconnect" href="https://fonts.googleapis.com"></link>
         <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;wght@600&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap"
           rel="stylesheet"
         />
       </Head>

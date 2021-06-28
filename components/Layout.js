@@ -20,7 +20,7 @@ const Layout = ({
         <meta name="description" content={description} />
         <meta property="og:description" content={description} key="ogdesc" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link rel="preconnect" href="https://fonts.googleapis.com"></link>
         <link
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap"
           rel="stylesheet"

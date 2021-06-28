@@ -39,10 +39,10 @@ const contact = () => {
     <ContactLayout>
       <div className="mt-40 px-6 w-full xl:flex xl:justify-around md:flex md:justify-around">
         <div className="xl:mt-14">
-          <h1 className=" pb-3 xl:text-[30px] xl:font-bold xl:mb-4 text-3xl font-bold">
+          <h1 className=" font-sans pb-3 xl:text-[30px] xl:font-bold xl:mb-4 text-3xl font-bold">
             Contact us
           </h1>
-          <div className="pb-3 flex  items-center max-w-[204px] justify-between xl:flex xl:items-center xl:max-w-[210px] xl:justify-between">
+          <div className="pb-3 flex  items-center max-w-[204px] justify-between xl:flex xl:items-center xl:max-w-[220px] xl:justify-between">
             <i class="far fa-envelope"></i>
             <p className=" text-sm ">business@pullupon7th.com</p>
           </div>
@@ -59,7 +59,7 @@ const contact = () => {
           </div>
         </div>
         <div>
-          <h1 className=" text-lg  font-bold xl:text-2xl xl:font-bold xl:mb-10">
+          <h1 className=" text-lg   font-bold xl:text-2xl xl:font-bold xl:mb-10">
             Get in touch with us
           </h1>
 
