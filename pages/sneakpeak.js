@@ -115,7 +115,7 @@ export default function sneakpeak() {
 							<img
 								src="/sneakPeakImages/Mask Group.png"
 								alt=""
-								className="w-[362px] h-[386px]"
+								className="relative w-[362px] h-[386px]"
 							/>
 							<div className="flex self-center md:w-[344px] md:h-[68px]">
 								<p className="font-bold text-[24px] leading-[34px] text-[#057176] tracking-[0.02em]">
@@ -126,7 +126,7 @@ export default function sneakpeak() {
 
 						{/* rectangle 2 */}
 						<div className="flex items-center justify-end bg-[#eca413] w-[888px] h-[471px] bg-opacity-[0.06] rounded-[20px]">
-							<section className="flex md:mb-48 flex-col w-[330px] h-[68px]">
+							<section className="flex flex-col w-[330px] h-[254px]">
 								<div className="md:w-[306px] md:h-[68px] md:mb-6">
 									<p className="font-bold text-[24px] leading-[34px] text-[#eca413] tracking-[0.02em]">
 										Share your authentic self with your profile
