@@ -12,6 +12,9 @@ module.exports = {
       backgroundImage: (theme) => ({
         "about-pattern": "url('/public/hero.png')",
       }),
+      outline: {
+        primary: "2px solid #057176",
+      },
     },
   },
   variants: {

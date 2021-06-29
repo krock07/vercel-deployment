@@ -44,10 +44,58 @@ const theFaqs = [
   },
   {
     question: "Once an experience has been created",
-    answer: "How many people can speak at once? ",
-    answerTwo:
+    answer1i: "How many people can speak at once? ",
+    answer2i:
       "There is a limit of 11 people who are allowed to speak at one time. Depending on community feedback, this number may change. ",
+    answer3i: "How many people can join an experience?",
+    answer4i:
+      "There is no limit to the amount of people who can join an experience. ",
+    answer5i: "How can I report an incident?",
+    answer6i:
+      "Safety is our #1 priority for those who pull up on the ave. With that being said, there are three different places to report a user and/or experience. ",
   },
+  {
+    question: "Within the experience",
+    answer:
+      "If there is an individual person that has broken any of the neighborhood rules and/or is a danger to themselves or community",
+    answerThree:
+      "1. You can click on that person's picture within the experience to enable their profile to appear.",
+    answerFour:
+      "2. On their profile, there is an option to ‘Report User.’ Select it.",
+    answerSix:
+      "3. You will then be taken to another screen and prompted to fill out a report explaining what took place so we at 7th Ave can open an investigation.",
+    answerSeven:
+      "If there is an experience that has broken any of the neighborhood rules and/or is a danger to themselves or community:",
+    answerSeven1:
+      "1. In the top right corner of the experience, click on the 3 dots to allow for a drop down screen.",
+    answerSeven2:
+      "2. Within the drop down screen there is an option to ‘Report Experience.’ Select it. ",
+    answerSeven3:
+      "3 .You will then be taken to another screen and prompted to fill out a report explaining what took place so we at 7th Ave can open an investigation. ",
+  },
+  {
+    question: "Outside of an experience",
+    answer:
+      "Given the fact rooms can end any time, potentially before you get a chance to report the incident, there is an option to report a user and/or experience outside of the experience itself.If there is a user and/or experience that has broken any of the neighborhood rules and/or is a danger to themselves or the 7th Ave community but the experience is no longer live:",
+    answerThree: "1. Click on your profile picture in the right hand corner.",
+    answerFour:
+      "2. In the top right corner of your profile, click on the 3 dots to allow for a drop down screen.",
+    answerFive:
+      "3. Within the drop down screen there is an option to ‘Report Incident.’ Select it. ",
+    answerSix:
+      "4. You will then be taken to another screen and prompted to fill out a report explaining what took place so we at 7th Ave can open an investigation. ",
+  },
+  {
+    question: "Who can end an experience?",
+    answer:
+      "The host is able to end an experience at any time. If the experience is in violation of any of the neighborhood rules, 7th Ave is also able to end experiences immediately. ",
+  },
+  {
+    question: "When an experience ends, what happens?",
+    answer:
+      "Experiences are only accessible while live. Once the host has ended it, the experience will no longer populate on the home screen or be available to the community. Audio and chats are kept temporarily in case there are any incidents filed on a particular user or experience that may require further investigation and/or appeals. If nothing is reported, both audio and chat are permanently deleted.  ",
+  },
+
   // More questions...
 ];
 
@@ -65,17 +113,14 @@ const faqs = () => {
         </div>
         <div className="max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto divide-y-2 divide-gray-200">
-            <h2 className="text-center text-3xl font-extrabold text-gray-900 sm:text-4xl">
-              Frequently asked questions
-            </h2>
             <dl className="mt-6  space-y-6 divide-y divide-gray-200 ">
               {theFaqs.map((faq) => (
                 <Disclosure as="div" key={faq.question} className="pt-6 ">
                   {({ open }) => (
                     <>
                       <dt className="text-lg">
-                        <Disclosure.Button className="  text-left w-full flex justify-between items-start text-gray-400 ">
-                          <span className="font-medium text-gray-900">
+                        <Disclosure.Button className="  focus:outline-primary  focus:rounded-md  text-left w-full flex justify-between items-start text-gray-400 ">
+                          <span className="font-semibold text-base  tracking-[2%] text-gray-900">
                             {faq.question}
                           </span>
                           {!open ? (
@@ -90,21 +135,53 @@ const faqs = () => {
                         </Disclosure.Button>
                       </dt>
                       <Disclosure.Panel as="dd" className="mt-2 pr-12">
-                        <p className="text-base text-gray-500 ">{faq.answer}</p>
-                        <p className="text-base text-gray-500  mt-2">
+                        <p className="text-base text-[#1a1a1c]  ">
+                          {faq.answer}
+                        </p>
+                        <p className="text-base text-[#1a1a1c] italic ">
+                          {faq.answer1i}
+                        </p>
+                        <p className="text-base text-[#1a1a1c] italic  mt-5">
                           {faq.answerTwo}
                         </p>
-                        <p className="text-base text-gray-500  mt-2 ml-3">
+                        <p className="text-base text-[#1a1a1c]   mt-[-8px]">
+                          {faq.answer2i}
+                        </p>
+                        <p className="text-base text-[#1a1a1c]d leading-5   mt-2 ml-3">
                           {faq.answerThree}
                         </p>
-                        <p className="text-base text-gray-500  mt-2 ml-3">
+                        <p className="text-base text-[#1a1a1c] leading-5 italic  mt-2">
+                          {faq.answer3i}
+                        </p>
+                        <p className="text-base text-[#1a1a1c] leading-5  mt-2 ml-3">
                           {faq.answerFour}
                         </p>
-                        <p className="text-base text-gray-500  mt-2 ml-3">
+                        <p className="text-base text-[#1a1a1c] leading-5  mt-[-8px]">
+                          {faq.answer4i}
+                        </p>
+                        <p className="text-base text-[#1a1a1c] leading-5  mt-5 ml-3">
                           {faq.answerFive}
                         </p>
-                        <p className="text-base text-gray-500  mt-2 ml-3">
+                        <p className="text-base text-[#1a1a1c] leading-5  mt-2 italic ">
+                          {faq.answer5i}
+                        </p>
+                        <p className="text-base text-[#1a1a1c]d leading-5   mt-2 ml-3 ">
                           {faq.answerSix}
+                        </p>
+                        <p className="text-base text-[#1a1a1c] leading-5  mt-[-8px] ">
+                          {faq.answer6i}
+                        </p>
+                        <p className="text-base text-[#1a1a1c] leading-5 mt-5">
+                          {faq.answerSeven}
+                        </p>
+                        <p className="text-base text-[#1a1a1c]d leading-5   mt-2 ml-3">
+                          {faq.answerSeven1}
+                        </p>
+                        <p className="text-base text-[#1a1a1c]d leading-5   mt-2 ml-3">
+                          {faq.answerSeven2}
+                        </p>
+                        <p className="text-base text-[#1a1a1c]d leading-5   mt-2 ml-3">
+                          {faq.answerSeven3}
                         </p>
                       </Disclosure.Panel>
                     </>

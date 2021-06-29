@@ -72,16 +72,16 @@ const HowToUse = () => {
     //   </div>
     // </div>
     <div className="bg-[#057176] h-[509px] w-[324px] rounded-[34px] mx-auto md:w-[712px] md:h-[396px] md:flex md:flex-row-reverse md:items-center lg:w-[90%] lg:h-[635px] lg:rounded-[70px] xl:h-[835px] xl:flex xl:flex-row-reverse">
-      <div className="ml-5 relative bottom-6 md:m-0 lg:mr-3 xl:mr-[65px]">
-        <h1 className="text-[#f2762f] font-bold pb-3 mr-6 text-center  text-[24px]  md:text-2xl lg:text-[37px] xl:mr-10  ">
+      <div className="ml-5  relative bottom-6 md:m-0 lg:mr-3 xl:mr-[65px] 2xl:mr-[12.75%]">
+        <h1 className="text-[#f2762f] font-bold pb-3 mr-6 text-center  text-[24px]  md:text-2xl lg:text-[37px] xl:mr-10   ">
           How to use the Ave
         </h1>
-        <p className="text-white text-center xl:text-left lg:text-left  md:text-base md:max-w-[320px] max-w-[268px] lg:text-[20px] xl:text-[24px] lg:leading-normal lg:max-w-[350px]  lg:font-light xl:font-normal xl:max-w-[400px]">
+        <p className="text-white text-center xl:text-left lg:text-left  md:text-base md:max-w-[320px] max-w-[268px] lg:text-[20px] xl:text-[24px] lg:leading-normal lg:max-w-[350px]  lg:font-light xl:font-normal xl:max-w-[400px] ">
           The Ave is a social networking app, allowing communities to gather in
           audio chat rooms to discuss various topics.
         </p>
       </div>
-      <div className="w-auto h-auto md:mr-9 xl:pr-32 ">
+      <div className="w-auto h-auto md:mr-9 xl:pr-32 2xl:pr-[19%] ">
         <img
           src="/discover.png"
           alt=""

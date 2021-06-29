@@ -14,7 +14,7 @@ const Discover = () => {
           strangers to create new perspectives and connections
         </p>
       </div>
-      <div className=" w-auto absolute inset-y-[2016px] md:ml-[445px] md:inset-y-[1839.5px] lg:inset-y-[2226px] lg:ml-[503.5px] xl:ml-[750px] xl:inset-y-[2646px]">
+      <div className=" w-auto absolute inset-y-[2016px] md:ml-[445px] md:inset-y-[1839.5px] lg:inset-y-[2226px] lg:ml-[503.5px] xl:ml-[750px] xl:inset-y-[2646px] 2xl:ml-[61.5%]">
         <img
           src="/imagine.png"
           alt=""

@@ -37,7 +37,7 @@ const about = () => {
 
       {/* About the company */}
       <div className=" xl:-mt-56  mx-auto xl:mb-36">
-        <div className=" flex flex-col-reverse  xl:flex md:flex-row md:w-full   md:items-center lg:mt-49 lg:pb-10 lg:ml-24 xl:pb-12">
+        <div className=" flex flex-col-reverse  xl:flex md:flex-row md:w-full   md:items-center lg:mt-49 lg:pb-10 lg:ml-24 xl:pb-12 2xl:ml-[10%]">
           <div className="ml-5 mr-5 md:mt-[-76px] md:ml-[35px] lg:ml-[-45px] lg:mt-[-90px]  xl:w-[57rem] xl:-ml-2 xl:mt-36 ">
             <h3 className="text-[#057176] mb-5  font-bold text-2xl  md:text-2xl lg:text-[24px] lg:pb-2 xl:text-[24px] xl:ml-[28px] ">
               About the Company
@@ -69,8 +69,8 @@ const about = () => {
       </div>
 
       {/* three photo section */}
-      <div className="xl:flex xl:ml-5 xl:mr-5 xl:justify-center mb-20 md:relative md:bottom-36 md:mb-2">
-        <div className="xl:flex-col xl:flex ">
+      <div className=" xl:flex xl:ml-5 xl:mr-5 xl:justify-center mb-20 md:relative md:bottom-36 md:mb-2  ">
+        <div className="xl:flex-col xl:flex  2xl:w-[85%] ">
           <div className=" flex gap-3 justify-between xl:flex pb-12 md:justify-around   md:w-[90%] md:mx-auto xl:w-full    ">
             <div className="xl:pr-6">
               <img
@@ -95,7 +95,7 @@ const about = () => {
             </div>
           </div>
 
-          <div className="xl:w-[1196px] xl:m-0 ml-5 mr-5 leading-loose text-sm md:mx-auto md:w-[689px] lg:w-[920px]">
+          <div className="xl:w-[1196px] xl:m-0 ml-5 mr-5 leading-loose text-sm md:mx-auto md:w-[689px] lg:w-[920px] 2xl:w-full 2xl:px-14 2xl:mb-3">
             <p className="md:text-[15px] md:leading-normal lg:leading-8">
               Seventh Ave boldly sets out to build the Black Metaverse, a place
               where digital and physical Black sensibilities converge to drive
@@ -109,7 +109,7 @@ const about = () => {
         </div>
       </div>
       {/* our goal is to */}
-      <div className="xl:mx-auto  pb-12 ml-5 mr-5   w-full md:m-0 md:px-6 md:relative md:bottom-24 lg:pl-14">
+      <div className="xl:mx-auto  pb-12 ml-5 mr-5   w-full md:m-0 md:px-6 md:relative md:bottom-24 lg:pl-14 2xl:pl-12">
         <div className="xl:flex items-center justify-between md:flex md:justify-around lg:justify-between xl:justify-around   w-screen">
           <div className="mb-10">
             <img

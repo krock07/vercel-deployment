@@ -33,7 +33,7 @@ const Hero = () => {
     //       </div>
     //     </div>
     <div className="bg-[#057176] h-[41.625rem] w-screen lg:h-[50rem] overflow-x-hidden ">
-      <div className="flex  w-80 mx-auto absolute inset-y-32  inset-x-6 md:w-screen md:absolute md:inset-x-[45%] md:inset-y-[13.5625rem] lg:inset-y-[120px] lg:inset-x-[43%]  ">
+      <div className="flex  w-80 mx-auto absolute inset-y-32  inset-x-6 md:w-screen md:absolute md:inset-x-[45%] md:inset-y-[13.5625rem] lg:inset-y-[120px] lg:inset-x-[43%] 2xl:inset-x-[57.5%]  ">
         <div className="w-auto ">
           <img
             src="/topLeft.png"
@@ -49,12 +49,12 @@ const Hero = () => {
           />
         </div>
 
-        <div className="flex flex-col justify-between">
+        <div className="flex flex-col justify-between ">
           <div className=" w-auto">
             <img
               src="/leeft.jpg"
               alt=""
-              className=" w-[116.95px] md:h-[175px] md:w-[233.42px] lg:w-[368px] lg:h-[276px] object-cover object-right-bottom "
+              className=" w-[116.95px]  md:h-[175px] md:w-[233.42px] lg:w-[368px] lg:h-[276px] object-cover object-right-bottom "
             />
           </div>
           <div className="w-auto mb-[340px] lg:mb-[700px]">
@@ -66,7 +66,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="flex absolute  inset-y-[242px] justify-between inset-x-[54px] w-80 md:inset-y-[428px] md:inset-x-[401px] lg:inset-y-[450px] lg:inset-x-[598px] xl:inset-x-[777px]">
+      <div className="flex absolute  inset-y-[242px] justify-between inset-x-[54px] w-80 md:inset-y-[428px] md:inset-x-[401px] lg:inset-y-[450px] lg:inset-x-[598px] xl:inset-x-[777px] 2xl:inset-x-[65.7%]">
         <div className="w-auto">
           <img
             src="/bottom.png"

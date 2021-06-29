@@ -1,4 +1,7 @@
 import React from "react";
+// import { ProgressBar } from "react-bootstrap";
+// import "bootstrap/dist/css/bootstrap.min.css";
+
 // used for making the prop types of this component
 import PropTypes from "prop-types";
 
@@ -10,6 +13,7 @@ import axios from "axios";
 
 export default function ImageUpload(props) {
   const [file, setFile] = React.useState(null);
+  const [percentage, setPercentage] = React.useState(0);
   const [imagePreviewUrl, setImagePreviewUrl] = React.useState(
     props.avatar ? defaultAvatar : defaultImage
   );
@@ -29,11 +33,20 @@ export default function ImageUpload(props) {
   // arthur's version
 
   const uploadPhoto = (photo) => {
+    setPercentage(0);
     console.log(photo);
     const formData = new FormData();
     formData.append("file", file);
+    const options = {
+      onUploadProgress: (data) => {
+        //Set the progress value to show the progress bar
+        let percent = Math.round((100 * data.loaded) / data.total);
+        console.log(percent);
+      },
+    };
+
     axios
-      .post("https://api.seventhave.io/upload", formData, {
+      .post("https://api.seventhave.io/upload", formData, options, {
         headers: new Headers({
           "Content-Type": "multipart/form-data",
         }),
@@ -41,6 +54,12 @@ export default function ImageUpload(props) {
       .then((res) => {
         const imageData = res.data.secure_url;
         localStorage.setItem("imageData", imageData);
+        setPercentage({ avatar: res.data.url, percentage: 100 }, () => {
+          setTimeout(() => {
+            setPercentage({ percentage: 0 });
+          }, 1000);
+        });
+
         console.log(res);
         console.log(imageData);
       })
@@ -69,6 +88,8 @@ export default function ImageUpload(props) {
       />
 
       <div className={avatar ? " img-circle h-17 " : ""}>
+        {/* {percentage > 0 && <LinearProgress value={percentage} />} */}
+
         <img
           className="rounded-[28px] w-28 mx-auto h-28 mb-5 object-cover"
           src={imagePreviewUrl}

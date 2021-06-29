@@ -4,7 +4,7 @@ import Image from "next/image";
 const OurMission = () => {
   return (
     <div className="bg-[#eca413] h-[509px] w-[324px] rounded-[34px] mx-auto my-10 md:w-[712px] md:h-[396px] md:flex md:flex-row-reverse md:items-center lg:w-[90%] lg:h-[635px] lg:rounded-[70px] xl:h-[835px] ">
-      <div className="ml-5 md:mr-2 lg:mr-[-30px] lg:max-w-[450px] xl:mr-4 lg:pr-10 ">
+      <div className="ml-5 md:mr-2 lg:mr-[-30px] lg:max-w-[450px] xl:mr-4 lg:pr-10 2xl:mr-[9.75%] ">
         <h1 className="text-white text-center xl:text-left lg:text-left  font-bold text-[24px] py-6 md:text-2xl tracking-wider lg:text-[37px]">
           Our Mission
         </h1>
@@ -21,7 +21,7 @@ const OurMission = () => {
           communities at scale
         </p>
       </div>
-      <div className="w-auto absolute inset-y-[2595px] md:mr-80 md:inset-y-[2295px] lg:inset-y-[2959px] lg:left-14 xl:inset-y-[505.5%]  ">
+      <div className="w-auto absolute inset-y-[2595px] md:mr-80 md:inset-y-[2295px] lg:inset-y-[2959px] lg:left-14 xl:inset-y-[502.7%] 2xl:inset-y-[378.1%] 2xl:left-36  ">
         <img
           src="/create.png"
           alt=""

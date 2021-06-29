@@ -4,9 +4,11 @@ import { XIcon } from "@heroicons/react/outline";
 import { TwitterShareButton } from "react-share";
 import { LinkedinShareButton } from "react-share";
 import Link from "next/link";
+import SelectField from "../../FormFields/SelectField";
 
 const SignupSuccess = () => {
   const [open, setOpen] = useState(true);
+
   const creatorInterests = [
     {
       value: "1",
@@ -163,7 +165,17 @@ const SignupSuccess = () => {
           >
             Type of creator
           </label>
-          <SelectField name="name" data={creatorInterests} fullWidth />
+          <select className=" block w-full text-black border  rounded-lg py-3 px-4 mt-3 mb-3 leading-tight focus:outline-none focus:ring-1 focus:ring-[#057176] focus:border-[#057176] bg-[#eaf1f7]  bg-opacity-30 focus:bg-white">
+            <option>Podcast</option>
+            <option></option>
+            <option></option>
+            <option></option>
+          </select>
+          {/* <SelectField
+            name={interests.name}
+            data={creatorInterests}
+            fullWidth
+          /> */}
         </div>
       </div>
     </div>

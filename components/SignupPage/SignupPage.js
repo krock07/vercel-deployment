@@ -107,7 +107,8 @@ export default function SignupPage() {
       MuiTypography: {
         root: {
           [defaultTheme.breakpoints.down("sm")]: {
-            backgroundColor: defaultTheme.palette.primary,
+            backgroundColor: defaultTheme.palette.secondary.contrast,
+            display: "none",
           },
         },
       },
@@ -135,12 +136,10 @@ export default function SignupPage() {
         width: "80%",
         paddingRight: "9rem",
       },
-      overrides: {
-        MuiTypography: {
-          text: {
-            [theme.breakpoints.down("sm")]: {
-              display: "none",
-            },
+      typography: {
+        displayBlock: {
+          [theme.breakpoints.down("sm")]: {
+            display: "none",
           },
         },
       },
@@ -151,7 +150,7 @@ export default function SignupPage() {
     <ThemeProvider theme={theme}>
       <>
         {activeStep !== 0 ? (
-          <div className="xl:mt-56 xl:px-80     xl:absolute xl:w-full ">
+          <div className="xl:mt-56 xl:px-80     xl:absolute xl:w-full 2xl:w-[75%] 2xl:ml-64 ">
             <Stepper
               className={classes.root}
               border-radius="10"
@@ -159,7 +158,9 @@ export default function SignupPage() {
             >
               {steps.map((label) => (
                 <Step key={label}>
-                  <StepLabel display={{ sm: "none" }}>{label}</StepLabel>
+                  <StepLabel style={{ fontSize: "150%", color: "#f00" }}>
+                    {label}
+                  </StepLabel>
                 </Step>
               ))}
             </Stepper>
@@ -271,7 +272,7 @@ export default function SignupPage() {
                         Previous
                       </button>
                     )}
-                    <div className="xl:m-1 xl:bottom-[25.56rem] w-[60%] relative bottom-[5.5rem] left-6">
+                    <div className="xl:m-1 xl:bottom-[25.56rem] lg:left-6 w-[60%] relative bottom-[5.5rem] left-1">
                       <button
                         disabled={isSubmitting}
                         type="submit"
