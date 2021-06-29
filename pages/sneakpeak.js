@@ -76,7 +76,7 @@ export default function sneakpeak() {
 				<img
 					src="/sneakPeakImages/search.png"
 					alt=""
-					className="sm:hidden md:w-[30px] md:h-[30px] md:block md:absolute md:top-[320px] md:left-[1320px]"
+					className="sm:hidden top-28 md:w-[30px] md:h-[30px] md:block md:relative md:top-[-55px] md:left-[1320px]"
 				/>
 
 				<div className=" flex  flex-col md:pl-6 md:flex md:flex-row  xl:pl-40">
@@ -117,7 +117,7 @@ export default function sneakpeak() {
 								alt=""
 								className="flex md:w-[362px] md:h-[386px] sm:self-center sm:w-[273.84px] sm:h-[292px]"
 							/>
-							<div className="flex sm:mt-10 sm:self-center sm:w-[264px] sm:h-[96px] md:mt-0 md:self-center md:w-[344px] md:h-[68px]">
+							<div className="flex sm:mt-16 sm:self-center sm:w-[264px] sm:h-[96px] md:mt-0 md:self-center md:w-[344px] md:h-[68px]">
 								<p className="font-bold md:text-[24px] md:leading-[34px] text-[#057176] tracking-[0.02em] sm:text-[20px] sm:leading-[32px]">
 									Join audio conversations on the ave
 								</p>
@@ -183,14 +183,14 @@ export default function sneakpeak() {
 						{/* rectangle 4 */}
 						<div className="flex sm:flex-col sm:justify-between sm:w-[312px] sm:h-[440px] md:justify-end md:flex-row bg-[#eaf1f7] md:w-[888px] md:h-[386px] bg-opacity-30 rounded-[20px]">
 							<div className="flex self-center sm:w-[264px] sm:h-[96px] md:w-[306px] md:h-[102px]">
-								<p className="font-bold sm:mt-8 sm:text-[20px] sm:leading-[32px] md:mt-0 md:text-[24px] md:leading-[34px] text-[#057176] tracking-[0.02em]">
+								<p className="font-bold sm:mt-16 sm:text-[20px] sm:leading-[32px] md:mt-0 md:text-[24px] md:leading-[34px] text-[#057176] tracking-[0.02em]">
 									Earn points and rewards for being a community advocate
 								</p>
 							</div>
 							<img
 								src="/sneakPeakImages/Mask Group4.png"
 								alt=""
-								className="sm:w-[393.34px] sm:h-[315px] md:w-[482px] md:h-[386px] rounded-[20px]"
+								className="sm:object-scale-down md:w-[482px] md:h-[386px] rounded-[20px]"
 							/>
 						</div>
 
@@ -239,14 +239,14 @@ export default function sneakpeak() {
 						{/* rectangle 8 */}
 						<div className="flex bg-[#eca413] sm:justify-between sm:w-[312px] sm:h-[416px] sm:flex-col md:justify-end md:w-[888px] md:h-[386px] md:flex-row bg-opacity-[0.06] rounded-[20px]">
 							<div className="flex sm:self-center sm:w-[264px] sm:h-[64px] md:justify-self-center md:w-[306px] md:h-[68px]">
-								<p className="font-bold sm:mt-7 sm:text-[20px] sm:leading-[32px] md:mt-0 md:text-[24px] md:leading-[34px] text-[#eca413] tracking-[0.02em]">
+								<p className="font-bold sm:mt-16 sm:text-[20px] sm:leading-[32px] md:mt-0 md:text-[24px] md:leading-[34px] text-[#eca413] tracking-[0.02em]">
 									Share your takeaways from great experiences
 								</p>
 							</div>
 							<img
 								src="/sneakPeakImages/Mask Group8.png"
 								alt=""
-								className="flex sm:w-[372.36px] sm:h-[299px] md:self-end md:w-[482px] md:h-[386px]"
+								className="flex sm:object-scale-down md:self-end md:w-[482px] md:h-[386px] rounded-[20px]"
 							/>
 						</div>
 					</div>
