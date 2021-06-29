@@ -126,7 +126,7 @@ export default function sneakpeak() {
 
 						{/* rectangle 2 */}
 						<div className="flex items-center md:flex-row md:justify-end bg-[#eca413] md:w-[888px] md:h-[471px] bg-opacity-[0.06] rounded-[20px] sm:flex-col sm:w-[312px] sm:h-[590px] sm:justify-between">
-							<section className="flex flex-col md:w-[330px] md:h-[254px] sm:mt-10 sm:w-[264px]">
+							<section className="flex flex-col md:w-[350px] md:h-[254px] sm:mt-10 sm:w-[264px]">
 								<div className="sm:w-[264px] sm:h-[64px] sm:mb-3 md:w-[306px] md:h-[68px] mb-6">
 									<p className="font-bold md:text-[24px] md:leading-[34px] text-[#eca413] tracking-[0.02em] sm:text-[20px] sm:leading-[32px]">
 										Share your authentic self with your profile
@@ -141,7 +141,7 @@ export default function sneakpeak() {
 									</li>
 									<li className="flex space-x-4">
 										<span className="text-[16px] leading-[16px]">💬 </span>
-										<div className="md:w-[301px] md:h-[24px]">
+										<div className="md:w-[330px] md:h-[24px]">
 											<p>Show your personality with prompts</p>
 										</div>
 									</li>
