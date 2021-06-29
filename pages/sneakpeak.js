@@ -70,13 +70,13 @@ export default function sneakpeak() {
 				<h1 className=" ml-5  mt-10 text-[20px] xl:font-medium xl:ml-[10.5rem] relative xl:top-8 ">
 					Content
 				</h1>
-				<h1 className=" relative top-28 ml-5 md:top-[-28px] md:left-60 xl:left-0  xl:top-[3px] xl:ml-[30rem] md:text-[20px] md:font-medium pb-6">
+				<h1 className=" relative top-28 ml-5 sm:top-[150px] sm:text-[20px] sm:leading-[30px] md:top-[-28px] md:left-60 xl:left-0  xl:top-[3px] xl:ml-[30rem] md:text-[20px] md:font-medium pb-6">
 					Sneak Peak
 				</h1>
 				<img
 					src="/sneakPeakImages/search.png"
 					alt=""
-					className="sm:hidden md:w-[30px] md:h-[30px] md:absolute md:top-[320px] md:left-[1320px]"
+					className="sm:hidden md:w-[30px] md:h-[30px] md:block md:absolute md:top-[320px] md:left-[1320px]"
 				/>
 
 				<div className=" flex  flex-col md:pl-6 md:flex md:flex-row  xl:pl-40">
@@ -109,7 +109,7 @@ export default function sneakpeak() {
 							</div>
 						</ul>
 					</div>
-					<div className="flex flex-col space-y-8 sm:justify-center sm:mb-6 sm:ml-20 md:mb-6 mt-20 md:ml-0 md:flex md:mx-auto md:w-9/12">
+					<div className="flex flex-col space-y-8 sm:justify-center sm:mb-6 sm:ml-20 sm:mt-20 md:mt-0 md:mb-10 md:flex md:mx-auto md:w-9/12">
 						{/* rectangle 1 */}
 						<div className="flex xl:flex-row md:flex-row sm:flex-col-reverse sm:justify-between sm:w-[312px] sm:h-[446px] md:justify-center md:space-x-5 bg-[#eaf1f7] md:w-[888px] md:h-[386px] bg-opacity-30 rounded-[20px]">
 							<img
@@ -117,8 +117,8 @@ export default function sneakpeak() {
 								alt=""
 								className="flex md:w-[362px] md:h-[386px] sm:self-center sm:w-[273.84px] sm:h-[292px]"
 							/>
-							<div className="flex sm:mt-10 sm:self-center sm:w-[264px] sm:h-[96px] md:self-center md:w-[344px] md:h-[68px]">
-								<p className="font-bold md:text-[24px] md:leading-[34px] text-[#057176] md:tracking-[0.02em] sm:text-[20px] sm:leading-[32px]">
+							<div className="flex sm:mt-10 sm:self-center sm:w-[264px] sm:h-[96px] md:mt-0 md:self-center md:w-[344px] md:h-[68px]">
+								<p className="font-bold md:text-[24px] md:leading-[34px] text-[#057176] tracking-[0.02em] sm:text-[20px] sm:leading-[32px]">
 									Join audio conversations on the ave
 								</p>
 							</div>
@@ -174,7 +174,7 @@ export default function sneakpeak() {
 								className="sm:w-[298.23px] sm:h-[318px] md:w-[362px] md:h-[386px]"
 							/>
 							<div className="flex self-center md:w-[344px] md:h-[68px]">
-								<p className="sm:text-[20px] sm:leading-[32px] font-bold md:text-[24px] md:leading-[34px] text-[#f2762f] tracking-[0.02em]">
+								<p className="sm:text-[20px] sm:leading-[32px] font-bold md:mt-0 md:text-[24px] md:leading-[34px] text-[#f2762f] tracking-[0.02em]">
 									Share your conversations on social media
 								</p>
 							</div>
@@ -183,7 +183,7 @@ export default function sneakpeak() {
 						{/* rectangle 4 */}
 						<div className="flex sm:flex-col sm:justify-between sm:w-[312px] sm:h-[440px] md:justify-end md:flex-row bg-[#eaf1f7] md:w-[888px] md:h-[386px] bg-opacity-30 rounded-[20px]">
 							<div className="flex self-center sm:w-[264px] sm:h-[96px] md:w-[306px] md:h-[102px]">
-								<p className="font-bold sm:mt-8 sm:text-[20px] sm:leading-[32px] md:text-[24px] md:leading-[34px] text-[#057176] tracking-[0.02em]">
+								<p className="font-bold sm:mt-8 sm:text-[20px] sm:leading-[32px] md:mt-0 md:text-[24px] md:leading-[34px] text-[#057176] tracking-[0.02em]">
 									Earn points and rewards for being a community advocate
 								</p>
 							</div>
@@ -202,16 +202,16 @@ export default function sneakpeak() {
 								className="flex self-center sm:w-[290.62px] sm:h-[284px] md:w-[362px] md:h-[386px]"
 							/>
 							<div className="flex self-center sm:w-[264px] sm:h-[64px] md:w-[344px] md:h-[34px]">
-								<p className="font-bold sm:mt-10 sm:text-[20px] sm:leading-[32px] md:text-[24px] md:leading-[34px] text-[#eca413] tracking-[0.02em]">
+								<p className="font-bold sm:mt-10 sm:text-[20px] sm:leading-[32px] md:mt-0 md:text-[24px] md:leading-[34px] text-[#eca413] tracking-[0.02em]">
 									Connect with your people
 								</p>
 							</div>
 						</div>
 
 						{/* rectangle 6 */}
-						<div className="flex space-x-5 sm:w-[312px] sm:h-[379px] sm:justify-between sm:flex-col justify-center bg-[#f2762f] md:flex-row md:w-[888px] md:h-[386px] bg-opacity-[0.06] rounded-[20px]">
+						<div className="flex space-x-5 sm:w-[312px] sm:h-[379px] sm:justify-between sm:flex-col md:justify-center bg-[#f2762f] md:flex-row md:w-[888px] md:h-[386px] bg-opacity-[0.06] rounded-[20px]">
 							<div className="flex self-center sm:w-[264px] sm:h-[64px] md:w-[334px] md:h-[68px]">
-								<p className="font-bold sm:mt-10 sm:text-[20px] sm:leading-[32px] md:text-[24px] md:leading-[34px] text-[#f2762f] tracking-[0.02em]">
+								<p className="font-bold sm:mt-10 sm:text-[20px] sm:leading-[32px] md:mt-0 md:text-[24px] md:leading-[34px] text-[#f2762f] tracking-[0.02em]">
 									Schedule conversations for later
 								</p>
 							</div>
@@ -223,30 +223,30 @@ export default function sneakpeak() {
 						</div>
 
 						{/* rectangle 7 */}
-						<div className="flex space-x-5 justify-center sm:w-[312px] sm:h-[416px] sm:justify-between sm:flex-col-reverse bg-[#eaf1f7] md:w-[888px] md:h-[386px] md:flex-row bg-opacity-30 rounded-[20px]">
+						<div className="flex space-x-5 sm:w-[312px] sm:h-[416px] sm:justify-between sm:flex-col-reverse bg-[#eaf1f7] md:justify-center md:w-[888px] md:h-[386px] md:flex-row bg-opacity-30 rounded-[20px]">
 							<img
 								src="/sneakPeakImages/Mask Group7.png"
 								alt=""
 								className="sm:w-[294.72px] sm:h-[288px] md:w-[395px] md:h-[386px]"
 							/>
 							<div className="flex self-center sm:w-[264px] sm:h-[64px] md:w-[344px] md:h-[68px]">
-								<p className="font-bold sm:mt-7 sm:text-[20px] sm:leading-[32px] md:text-[24px] md:leading-[34px] text-[#057176] tracking-[0.02em] font-sans">
+								<p className="font-bold sm:mt-7 sm:text-[20px] sm:leading-[32px] md:mt-0 md:text-[24px] md:leading-[34px] text-[#057176] tracking-[0.02em] font-sans">
 									Chat with your people in real time
 								</p>
 							</div>
 						</div>
 
 						{/* rectangle 8 */}
-						<div className="flex justify-end bg-[#eca413] sm:justify-between sm:w-[312px] sm:h-[416px] sm:flex-col md:w-[888px] md:h-[386px] md:flex-row bg-opacity-[0.06] rounded-[20px]">
-							<div className="flex self-center sm:w-[264px] sm:h-[64px] md:w-[306px] md:h-[68px]">
-								<p className="font-bold sm:mt-7 sm:text-[20px] sm:leading-[32px] md:text-[24px] md:leading-[34px] text-[#eca413] tracking-[0.02em]">
+						<div className="flex bg-[#eca413] sm:justify-between sm:w-[312px] sm:h-[416px] sm:flex-col md:justify-end md:w-[888px] md:h-[386px] md:flex-row bg-opacity-[0.06] rounded-[20px]">
+							<div className="flex sm:self-center sm:w-[264px] sm:h-[64px] md:justify-self-center md:w-[306px] md:h-[68px]">
+								<p className="font-bold sm:mt-7 sm:text-[20px] sm:leading-[32px] md:mt-0 md:text-[24px] md:leading-[34px] text-[#eca413] tracking-[0.02em]">
 									Share your takeaways from great experiences
 								</p>
 							</div>
 							<img
 								src="/sneakPeakImages/Mask Group8.png"
 								alt=""
-								className="sm:w-[372.36px] sm:h-[299px] md:w-[482px] md:h-[386px]"
+								className="flex sm:w-[372.36px] sm:h-[299px] md:self-end md:w-[482px] md:h-[386px]"
 							/>
 						</div>
 					</div>
