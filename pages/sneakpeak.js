@@ -54,7 +54,7 @@ export default function sneakpeak() {
 	return (
 		<SignInLayout>
 			<div className="xl:mt-36 mt-24">
-				<div className="bg-[#EFEAE5] flex flex-col justify-center items-start  xl:relative xl:bottom-11 xl:pl-40">
+				<div className="bg-[#EFEAE5] w-screen flex flex-col justify-center items-start  xl:relative xl:bottom-11 xl:pl-40">
 					{user ? (
 						<h1 className=" text-[28px] mb-5 ml-5 capitalize xl:m-0  font-bold xl:text-[32px] text-[#f2762f] xl:font-bold xl:pb-6">
 							Hi {user.username}
