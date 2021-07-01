@@ -53,7 +53,7 @@ export default function sneakpeak() {
 
 	return (
 		<SignInLayout>
-			<div className="xl:mt-36 mt-24">
+			<div className="w-screen xl:mt-36 mt-24">
 				<div className="bg-[#EFEAE5] w-screen flex flex-col justify-center items-start  xl:relative xl:bottom-11 xl:pl-40">
 					{user ? (
 						<h1 className=" text-[28px] mb-5 ml-5 capitalize xl:m-0  font-bold xl:text-[32px] text-[#f2762f] xl:font-bold xl:pb-6">
@@ -70,13 +70,13 @@ export default function sneakpeak() {
 				<h1 className=" ml-5  mt-10 text-[20px] xl:font-medium xl:ml-[10.5rem] relative xl:top-8 ">
 					Content
 				</h1>
-				<h1 className=" relative ml-5 top-[150px] text-[20px] leading-[30px] md:top-[-28px] md:left-60 xl:left-0  xl:top-[3px] xl:ml-[30rem] md:text-[20px] md:font-medium pb-6">
+				<h1 className="w-[120px] relative ml-5 top-[150px] text-[20px] leading-[30px] md:top-[-28px] md:left-60 xl:left-0  xl:top-[3px] xl:ml-[30rem] md:text-[20px] md:font-medium pb-6">
 					Sneak Peak
 				</h1>
 				<img
 					src="/sneakPeakImages/search.png"
 					alt=""
-					className="hidden top-28 md:w-[30px] md:h-[30px] md:block md:relative md:top-[-55px] md:left-[1320px]"
+					className="hidden top-28 w-[30px] h-[30px] lg:inline lg:relative lg:top-[-88px] lg:left-[1150px] xl:top-[-55px] xl:left-[1320px]"
 				/>
 
 				<div className=" flex  flex-col md:pl-6 md:flex md:flex-row  xl:pl-40">
@@ -111,7 +111,7 @@ export default function sneakpeak() {
 					</div>
 					<div className="flex flex-col space-y-8 justify-center mb-6 ml-20 mt-20 md:mt-0 md:mb-10 md:mx-auto md:w-9/12 xl:mt-0 xl:mb-10 xl:mx-auto xl:w-9/12">
 						{/* rectangle 1 */}
-						<div className="flex xl:flex-row md:flex-row flex-col-reverse justify-between w-[312px] h-[446px] md:justify-center md:space-x-5 bg-[#eaf1f7] md:w-[888px] md:h-[386px] bg-opacity-30 rounded-[20px]">
+						<div className="flex xl:flex-row md:flex-row flex-col-reverse justify-between w-[312px] h-[446px] md:justify-center space-x-5 bg-[#eaf1f7] md:w-[888px] md:h-[386px] bg-opacity-30 rounded-[20px]">
 							<img
 								src="/sneakPeakImages/Mask Group.png"
 								alt=""
