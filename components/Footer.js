@@ -108,7 +108,7 @@ const Footer = () => {
                 <a className="cursor-pointer">Contact</a>
               </li>
             </Link>
-            <Link href="/podcast">
+            <Link href="/faqs">
               <li className="cursor-pointer">Faqs</li>
             </Link>
             <li className="cursor-pointer">Partners</li>
@@ -126,7 +126,7 @@ const Footer = () => {
             <div className="px-2">
               <a
                 className="text-white"
-                href="https://www.instagram.com/pullupon7th/"
+                href="https://twitter.com/pullupon7th"
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -54,8 +54,12 @@ const contact = () => {
             Don’t forget to follow our social media.
           </p>
           <div className=" relative top-[36.5rem] flex mb-10  xl:top-[-79px] md:top-[20px]  justify-between w-2/12 xl:flex xl:items-center xl:justify-between xl:max-w-[50px] xl:mt-10">
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-twitter"></i>
+            <a href="https://www.instagram.com/pullupon7th/">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com/pullupon7th">
+              <i class="fab fa-twitter"></i>
+            </a>
           </div>
         </div>
         <div>

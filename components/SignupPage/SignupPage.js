@@ -112,6 +112,13 @@ export default function SignupPage() {
           },
         },
       },
+      MuiStepLabel: {
+        labelContainer: {
+          [defaultTheme.breakpoints.down("sm")]: {
+            display: "none",
+          },
+        },
+      },
     },
     palette: {
       primary: {
@@ -128,20 +135,10 @@ export default function SignupPage() {
   const useStyles = makeStyles((theme) => ({
     root: {
       [theme.breakpoints.down("sm")]: {
-        marginRight: "10px",
         backgroundColor: "#f1f5f8",
 
         position: "relative",
         top: "6rem",
-        width: "80%",
-        paddingRight: "9rem",
-      },
-      typography: {
-        displayBlock: {
-          [theme.breakpoints.down("sm")]: {
-            display: "none",
-          },
-        },
       },
     },
   }));
@@ -158,7 +155,7 @@ export default function SignupPage() {
             >
               {steps.map((label) => (
                 <Step key={label}>
-                  <StepLabel style={{ fontSize: "150%", color: "#f00" }}>
+                  <StepLabel className={classes.labelContainer}>
                     {label}
                   </StepLabel>
                 </Step>
@@ -262,7 +259,7 @@ export default function SignupPage() {
                 <Form id={formId}>
                   {renderStepContent(activeStep)}
 
-                  <div className="flex justify-end ml-10">
+                  <div className="flex justify-end ml-[3.5rem] md:ml-[-10px]">
                     {activeStep !== 0 && (
                       <button
                         type="button"

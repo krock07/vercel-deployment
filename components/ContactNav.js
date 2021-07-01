@@ -85,7 +85,7 @@ const Nav = () => {
         <div className="px-2">
           <a
             className="text-[#057176]"
-            href="https://www.instagram.com/pullupon7th/"
+            href="https://twitter.com/pullupon7th"
             target="_blank"
             rel="noopener noreferrer"
           >

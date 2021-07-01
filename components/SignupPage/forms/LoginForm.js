@@ -103,6 +103,12 @@ export default function LoginForm() {
   // const logout = () => {
   //   localStorage.removeItem("user")
   // }
+  // const handleLogout = () => {
+  //   setUser({});
+  //   setUsername("");
+  //   setPassword("");
+  //   localStorage.clear();
+  // };
 
   const getCurrentUser = () => {
     return JSON.parse(localStorage.getItem("user"));
