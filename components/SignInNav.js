@@ -97,7 +97,7 @@ const SignInNav = () => {
 				<div className="pl-5 md:pr-10">
 					{user ? (
 						<Link href="/podcast">
-							<div className=" cursor-pointer flex w-[199px] justify-around items-center h-[62px] rounded-[10px] bg-white sm:bg-opacity-[0%] md:bg-opacity-[18%]">
+							<div className=" cursor-pointer flex w-[199px] justify-around items-center h-[62px] rounded-[10px] bg-white bg-opacity-[0%] md:bg-opacity-[18%]">
 								<img
 									src={user.photo}
 									className=" rounded-full w-[42px] h-[42px] object-cover"
