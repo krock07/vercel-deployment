@@ -259,7 +259,7 @@ export default function SignupPage() {
                 <Form id={formId}>
                   {renderStepContent(activeStep)}
 
-                  <div className="flex justify-end ml-[3.5rem] md:ml-[-10px]">
+                  <div className="flex justify-end ml-[3.5rem] md:ml-[-10px] 2xl:ml-[3%]">
                     {activeStep !== 0 && (
                       <button
                         type="button"

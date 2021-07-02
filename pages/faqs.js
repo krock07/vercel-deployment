@@ -106,8 +106,8 @@ const faqs = () => {
   return (
     <ContactLayout>
       <div className="bg-gray-50 mt-24 xl:mt-36">
-        <div className="bg-[#EFEAE5] h-[100px] flex flex-col justify-center items-start  xl:relative xl:bottom-12  xl:pl-40">
-          <h3 className=" text-[26px] font-semibold w-[250px] leading-8 ml-5 md:w-[550px] xl:text-[30px] xl:w-[550px] xl:m-0 xl:font-bold relative bottom-4 text-[#f2762f]">
+        <div className="bg-[#EFEAE5] h-[100px] flex flex-col justify-center items-start  xl:relative xl:bottom-12  xl:pl-40  ">
+          <h3 className=" text-[26px] font-semibold w-[250px] leading-8 ml-5 md:w-[550px] xl:text-[30px] xl:w-[550px] xl:m-0 xl:font-bold relative bottom-4 text-[#f2762f] 2xl:ml-[3%]">
             Frequently Asked Questions
           </h3>
         </div>

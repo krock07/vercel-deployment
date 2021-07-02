@@ -22,17 +22,48 @@ const contact = () => {
     });
   };
 
-  const sendMessage = (e) => {
+  // const sendMessage = (e) => {
+  //   e.preventDefault();
+  //   if (!this.validateMail()) {
+  //     return;
+  //   }
+  //   const templateParams = {
+  //     from_name: values.firstName + " (" + values.lastName + ")",
+  //     // to_name: {wherever you are sending the email},
+  //     typeInquiry: values.typeInquiry,
+  //     note: values.note,
+  //   };
+  // };
+
+  const submitEmail = async (e) => {
     e.preventDefault();
-    if (!this.validateMail()) {
-      return;
-    }
-    const templateParams = {
-      from_name: values.firstName + " (" + values.lastName + ")",
-      // to_name: {wherever you are sending the email},
-      typeInquiry: values.typeInquiry,
-      note: values.note,
-    };
+    console.log({ mailerState });
+    const response = await fetch("http://localhost:3001/send", {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify({ mailerState }),
+    })
+      .then((res) => res.json())
+      .then(async (res) => {
+        const resData = await res;
+        console.log(resData);
+        if (resData.status === "success") {
+          alert("Message Sent");
+        } else if (resData.status === "fail") {
+          alert("Message failed to send");
+        }
+      })
+      .then(() => {
+        setValues({
+          firstName: "",
+          lastName: "",
+          email: "",
+          typeInquiry: "",
+          note: "",
+        });
+      });
   };
 
   return (

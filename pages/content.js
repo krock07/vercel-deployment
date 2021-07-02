@@ -74,21 +74,21 @@ const content = () => {
       <div className="xl:mt-36 mt-24">
         <div className="bg-[#EFEAE5] flex flex-col justify-center items-start  xl:relative xl:bottom-11 xl:pl-40">
           {user ? (
-            <h1 className=" text-[28px] mb-5 ml-5 capitalize xl:m-0  font-bold xl:text-[32px] text-[#f2762f] xl:font-bold xl:pb-6">
+            <h1 className=" text-[28px] mb-5 ml-5 capitalize xl:m-0  font-bold xl:text-[32px] text-[#f2762f] xl:font-bold xl:pb-6 2xl:ml-[3%]">
               Hi {user.username}
             </h1>
           ) : (
             <h1>no user</h1>
           )}
 
-          <h3 className=" text-[26px] font-semibold w-[250px] leading-8 ml-5 md:w-[550px] xl:text-[30px] xl:w-[550px] xl:m-0 xl:font-semibold relative bottom-4">
+          <h3 className=" text-[26px] font-semibold w-[250px] leading-8 ml-5 md:w-[550px] xl:text-[30px] xl:w-[550px] xl:m-0 xl:font-semibold relative bottom-4 2xl:ml-[3%]">
             Handpicked Vibes While You Wait
           </h3>
         </div>
-        <h1 className=" ml-5  mt-10 text-[20px] xl:font-medium xl:ml-[10.5rem] relative xl:top-8 ">
+        <h1 className=" ml-5  mt-10 text-[20px] xl:font-medium xl:ml-[10.5rem] relative xl:top-8  ">
           Content
         </h1>
-        <h1 className=" relative top-9rem ml-5 md:top-[-1.75px] md:left-60 xl:left-0  xl:top-[3px] xl:ml-[30rem] md:text-[20px] md:font-medium pb-6">
+        <h1 className=" relative top-9rem ml-5 md:top-[-1.75px] md:left-60 xl:left-0  xl:top-[3px] xl:ml-[30rem] md:text-[20px] md:font-medium pb-6 2xl:left-[3%]">
           Popular Articles
         </h1>
 
@@ -145,7 +145,7 @@ const content = () => {
                 </p>
                 <div class="mt-5">
                   <a
-                    href=""
+                    href="https://www.revolt.tv/news/2021/5/13/22434420/jaden-smith-i-love-you-restaurant-homeless"
                     class="py-2 mr-[128px]  font-semibold hover:text-white  text-[#057176]  md:mr-0"
                   >
                     Read More
@@ -160,6 +160,7 @@ const content = () => {
                 src="https://cdn.shopify.com/s/files/1/0135/0280/8123/articles/custom_resized_ee7ccc36-843f-4022-aaf7-569e4381ea14_1024x1024.png?v=1621585421"
                 alt=""
                 class="overflow-hidden w-[312px] lg:w-[278px] h-[147px] object-cover rounded-t-md md:w-[216px]"
+                target="_blank"
               />
               {/* <!-- Card Content --> */}
               <div class="p-4">
@@ -178,6 +179,7 @@ const content = () => {
                   <a
                     href="https://www.becauseofthemwecan.com/blogs/the-feels/the-student-who-received-50k-from-drake-in-god-s-plan-music-video-just-graduated-with-her-master-s-degree"
                     class="py-2 mr-[128px]  font-semibold hover:text-white  text-[#057176]  md:mr-0"
+                    target="_blank"
                   >
                     Read More
                   </a>
@@ -208,6 +210,7 @@ const content = () => {
                   <a
                     href="https://bookriot.com/reading-self-care/"
                     class="py-2 mr-[128px]  font-semibold hover:text-white  text-[#057176]  md:mr-0"
+                    target="_blank"
                   >
                     Read More
                   </a>
@@ -236,6 +239,7 @@ const content = () => {
                   <a
                     href="https://fs.blog/2016/08/the-inner-scorecard/"
                     class="py-2 mr-[128px]  font-semibold hover:text-white  text-[#057176]  md:mr-0"
+                    target="_blank"
                   >
                     Read More
                   </a>
@@ -265,6 +269,7 @@ const content = () => {
                   <a
                     href="https://blog.stephsmith.io/how-to-be-great/"
                     class="py-2 mr-[128px]  font-semibold hover:text-white  text-[#057176]  md:mr-0"
+                    target="_blank"
                   >
                     Read More
                   </a>
@@ -297,6 +302,7 @@ const content = () => {
                   <a
                     href="https://afro.com/actor-hill-harper-launches-first-black-owned-digitalwallet-the-black-wall-street/"
                     class="py-2 mr-[128px] md:mr-0 font-semibold hover:text-white  text-[#057176]"
+                    target="_blank"
                   >
                     Read More
                   </a>

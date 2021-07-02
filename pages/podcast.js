@@ -103,23 +103,23 @@ const podcast = () => {
   return (
     <SignInLayout>
       <div className="xl:mt-36 mt-24">
-        <div className="bg-[#EFEAE5] flex flex-col justify-center items-start  xl:relative xl:bottom-11 xl:pl-40">
+        <div className="bg-[#EFEAE5] flex flex-col justify-center items-start  xl:relative xl:bottom-11 xl:pl-40 ">
           {user ? (
-            <h1 className=" text-[28px] mb-5 ml-5 capitalize xl:m-0  font-bold xl:text-[32px] text-[#f2762f] xl:font-bold xl:pb-6">
+            <h1 className=" text-[28px] mb-5 ml-5 capitalize xl:m-0  font-bold xl:text-[32px] text-[#f2762f] xl:font-bold xl:pb-6 2xl:ml-[3%]">
               Hi {user.username}
             </h1>
           ) : (
             <h1>no user</h1>
           )}
 
-          <h3 className=" text-[26px] font-semibold w-[250px] leading-8 ml-5 md:w-[550px] xl:text-[30px] xl:w-[550px] xl:m-0 xl:font-semibold relative bottom-4">
+          <h3 className=" text-[26px] font-semibold w-[250px] leading-8 ml-5 md:w-[550px] xl:text-[30px] xl:w-[550px] xl:m-0 xl:font-semibold relative bottom-4 2xl:ml-[3%]">
             Handpicked Vibes While You Wait
           </h3>
         </div>
         <h1 className=" ml-5  mt-10 text-[20px] xl:font-medium xl:ml-[10.5rem] relative xl:top-8 ">
           Content
         </h1>
-        <h1 className="  relative top-36 ml-5 md:top-[-28px] md:left-60 xl:left-0  xl:top-[3px] xl:ml-[30rem] md:text-[20px] md:font-medium pb-6">
+        <h1 className="  relative top-36 ml-5 md:top-[-28px] md:left-60 xl:left-0  xl:top-[3px] xl:ml-[30rem] md:text-[20px] md:font-medium pb-6 2xl:left-[3%]">
           Keep your Ear to the Streets
         </h1>
 
@@ -166,6 +166,7 @@ const podcast = () => {
                   <div className="flex justify-between xl:justify-between xl:items-center">
                     <a
                       className="cursor-pointer"
+                      target="_blank"
                       href={item.external_urls.spotify}
                     >
                       <p
@@ -176,7 +177,7 @@ const podcast = () => {
                       </p>
                     </a>
 
-                    <a href={item.external_urls.spotify}>
+                    <a href={item.external_urls.spotify} target="_blank">
                       <FiShare2 />
                     </a>
                   </div>

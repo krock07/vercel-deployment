@@ -19,7 +19,7 @@ const ProfileSettings = (props) => {
         <div className="xl:flex  xl:justify-center ">
           <ImageUpload avatar />
         </div>
-        <div className="xl:ml-[10px] xl:w-[81%] w-[85%] flex flex-col mx-auto 2xl:ml-20">
+        <div className="xl:ml-[10%] xl:w-[81%] w-[85%] flex flex-col mx-auto 2xl:ml-20">
           <div className="relative">
             <label
               className="xl:text-[13px] text-[#667682] text-xs"

@@ -1,7 +1,7 @@
 import React from "react";
 // import { ProgressBar } from "react-bootstrap";
 // import "bootstrap/dist/css/bootstrap.min.css";
-
+import LinearProgress from "@material-ui/core/LinearProgress";
 // used for making the prop types of this component
 import PropTypes from "prop-types";
 
@@ -38,10 +38,12 @@ export default function ImageUpload(props) {
     const formData = new FormData();
     formData.append("file", file);
     const options = {
-      onUploadProgress: (data) => {
+      onUploadProgress: (progressEvent) => {
+        const { loaded, total } = progressEvent;
         //Set the progress value to show the progress bar
-        let percent = Math.round((100 * data.loaded) / data.total);
+        const percent = Math.floor(((loaded / 1000) * 100) / (total / 1000));
         console.log(percent);
+        setPercentage(percent);
       },
     };
 
@@ -88,7 +90,16 @@ export default function ImageUpload(props) {
       />
 
       <div className={avatar ? " img-circle h-17 " : ""}>
-        {/* {percentage > 0 && <LinearProgress value={percentage} />} */}
+        {percentage > 0 && (
+          <>
+            <LinearProgress
+              value={percentage}
+              variant="determinate"
+              label={percentage}
+            />{" "}
+            <h1>{`${percentage}%`}</h1>
+          </>
+        )}
 
         <img
           className="rounded-[28px] w-28 mx-auto h-28 mb-5 object-cover"
