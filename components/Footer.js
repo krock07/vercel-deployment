@@ -42,11 +42,19 @@ const Footer = () => {
       </div>
 
       <hr className="w-4/5 mx-auto pb-8 md:w-11/12 lg:hidden" />
-      <ul className="hidden md:flex-row md:flex  md:justify-around md:-mx-8 md:text-white md:text-xs md:mb-16 lg:hidden">
-        <li>Get Started</li>
-        <li>Faqs</li>
-        <li>Collaborate with us</li>
-        <li>Keep us informed</li>
+      <ul className=" cursor-pointer hidden md:flex-row md:flex  md:justify-around md:-mx-8 md:text-white md:text-xs md:mb-16 lg:hidden">
+        <Link href="/">
+          <li>Home</li>
+        </Link>
+        <Link href="/about">
+          <li>About</li>
+        </Link>
+        <Link href="/contact">
+          <li>Contact</li>
+        </Link>
+        <Link href="/faqs">
+          <li>FAQs</li>
+        </Link>
       </ul>
       <div className="w-full justify-center flex flex-col items-center md:flex md:flex-row md:justify-between md:px-8 lg:mt-12">
         <div className="md:flex-col md:flex justify-center flex flex-col items-center md:items-start xl:ml-32">
@@ -84,7 +92,7 @@ const Footer = () => {
             />
           </svg>
 
-          <div className="py-4">
+          <div className="py-4  w-[120%]">
             <p className="text-[10px] text-white">
               ©2021 Made with ❤️ by 👋🏾 hands
             </p>

@@ -182,13 +182,13 @@ function Nav(props) {
           <div className="pl-5 md:pr-10">
             {user ? (
               <Link href="/podcast">
-                <div className=" cursor-pointer flex w-[199px] justify-around items-center h-[62px] rounded-[10px] bg-[#249196]">
+                <div className=" bg-none cursor-pointer flex justify-between pr-36 md:pr-0 md:w-[199px] md:justify-around items-center h-[62px] rounded-[10px] md:bg-[#249196]">
                   <img
                     src={user.photo}
                     className=" rounded-full w-[42px] h-[42px] object-cover"
                     alt=""
                   />
-                  <span className="text-white text-sm">
+                  <span className="md:text-white text-sm font-bold text-gray-500 md:font-normal">
                     {user.firstName} {user.lastName}
                   </span>
                 </div>

@@ -259,7 +259,7 @@ export default function SignupPage() {
                 <Form id={formId}>
                   {renderStepContent(activeStep)}
 
-                  <div className="flex justify-end ml-[3.5rem] md:ml-[-10px] 2xl:ml-[3%]">
+                  <div className="flex justify-end ml-[3.5rem]  2xl:ml-[3%] ">
                     {activeStep !== 0 && (
                       <button
                         type="button"
@@ -269,7 +269,7 @@ export default function SignupPage() {
                         Previous
                       </button>
                     )}
-                    <div className="xl:m-1 xl:bottom-[25.56rem] lg:left-6 w-[60%] relative bottom-[5.5rem] left-1">
+                    <div className=" md:left-[13%]  xl:m-1 xl:bottom-[25.56rem] lg:left-6 w-[60%] relative bottom-[5.5rem] left-1">
                       <button
                         disabled={isSubmitting}
                         type="submit"

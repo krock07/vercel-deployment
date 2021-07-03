@@ -1,8 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 
 function Navbar(props) {
   const [navbarOpen, setNavbarOpen] = useState(false);
+  const [user, setUser] = useState();
+  useEffect(() => {
+    const loggedInUser = localStorage.getItem("user");
+    if (loggedInUser) {
+      const foundUser = JSON.parse(loggedInUser);
+      setUser(foundUser);
+    }
+  }, []);
   return (
     <nav
       className={
@@ -139,10 +147,20 @@ function Navbar(props) {
               </a>
             </li>
           </ul>
-          <div className="pl-5 md:pr-10">
-            <button className="rounded-xl border border-[#057176] h-9 w-28 text-[#057176]">
-              Get Started
-            </button>
+          <div className="pl-5 md:pr-10 mb-5 md:mb-0">
+            {user ? (
+              <Link href="/login">
+                <button className="rounded-xl border border-[#057176] h-9 w-28 text-[#057176]">
+                  Login
+                </button>
+              </Link>
+            ) : (
+              <Link href="/signup">
+                <button className="rounded-xl border mb-5 border-[#057176] h-9 w-28 text-[#057176]">
+                  Get Started
+                </button>
+              </Link>
+            )}
           </div>
         </div>
       </div>

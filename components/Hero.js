@@ -75,7 +75,7 @@ const Hero = () => {
           />
         </div>
       </div>
-      <div className="absolute inset-y-[425px] inset-x-6 md:inset-y-[300px] lg:inset-x-12 lg:inset-y-[260px] xl:lg:inset-x-40">
+      <div className="absolute inset-y-[425px] inset-x-6 md:inset-y-[300px] lg:inset-x-12 lg:inset-y-[260px] xl:inset-x-40 2xl:inset-x-[11%] ">
         <div className="pb-6">
           <h1 className="text-[26px] font-bold text-white lg:text-[48px]">
             Seventh Ave

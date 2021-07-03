@@ -122,21 +122,24 @@ export default function LoginForm() {
   }
 
   return (
-    <div className="xl:flex xl:flex-col xl:justify-center xl:items-center xl:py-52 xl:px-52 ">
-      <div className="bg-white xl:w-[788px] xl:h-[592px] xl:rounded-[70px] xl:flex xl:flex-col xl:justify-around xl:px-20 xl:py-20 ">
-        <h1 className="xl:font-bold xl:text-[28px] text-[#057176]">
+    <div className="  py-36 xl:flex xl:flex-col xl:justify-center xl:items-center xl:py-52 xl:px-52 ">
+      <div className="bg-white w-[85%] h-[479px] rounded-[32px] mx-auto xl:w-[788px] xl:h-[592px] xl:rounded-[70px] xl:flex xl:flex-col xl:justify-around xl:px-20 xl:py-20 ">
+        <h1 className=" text-lg pt-10 pb-3 px-5  font-bold xl:text-[28px] text-[#057176]">
           Login to Seventh Ave
         </h1>
 
-        <p className="xl:text-base text-[#667682]">
+        <p className=" px-5 pb-5 tracking-wide text-[13px] xl:text-base text-[#667682]">
           Don't have account yet?{" "}
-          <span className="text-[#057176] xl:font-semibold">
+          <span className="text-[#057176] text-[13px] tracking-wide font-semibold">
             <Link href="/signup">Register</Link>
           </span>
         </p>
         <form onSubmit={submit}>
           <div>
-            <label htmlFor="username" className="text-[13px] text-[#667682]">
+            <label
+              htmlFor="username"
+              className="  text-sm ml-5  font-bold text-[13px] text-[#667682]"
+            >
               Username
             </label>
             <input
@@ -145,11 +148,14 @@ export default function LoginForm() {
               type="text"
               name="username"
               value={username}
-              className="appearance-none block w-full text-black border  rounded-lg py-3 px-4 mb-3 mt-3 leading-tight focus:outline-none focus:ring-1 focus:ring-[#057176] focus:border-[#057176] bg-[#eaf1f7]  bg-opacity-30 focus:bg-white"
+              className="w-[85%] px-2 ml-5 appearance-none block md:w-[93%] text-black border  rounded-lg py-3 md:px-4 mb-3 mt-3 leading-tight focus:outline-none focus:ring-1 focus:ring-[#057176] focus:border-[#057176] bg-[#eaf1f7]  bg-opacity-30 focus:bg-white"
             />
           </div>
           <div>
-            <label htmlFor="first name" className="text-[13px] text-[#667682]">
+            <label
+              htmlFor="first name"
+              className="  text-sm ml-5  font-bold text-[13px] text-[#667682]"
+            >
               Password
             </label>
             <input
@@ -158,16 +164,16 @@ export default function LoginForm() {
               value={password}
               name="password"
               placeholder="Enter your password"
-              className="appearance-none block w-full text-black border  rounded-lg py-3 px-4 mt-3 mb-3 leading-tight focus:outline-none focus:ring-1 focus:ring-[#057176] focus:border-[#057176] bg-[#eaf1f7]  bg-opacity-30 focus:bg-white"
+              className="w-[85%] ml-5  px-2 appearance-none block md:w-[93%] text-black border  rounded-lg py-3 md:px-4 mb-5 mt-3 leading-tight focus:outline-none focus:ring-1 focus:ring-[#057176] focus:border-[#057176] bg-[#eaf1f7]  bg-opacity-30 focus:bg-white"
             />
           </div>
 
-          <div className="xl:flex xl:justify-between xl:items-center xl:mt-6">
+          <div className=" flex ml-5 md:pr-10 xl:flex md:justify-between md:items-center xl:mt-6">
             <p className="text-[13px] text-[#667682]">Forgot Password?</p>
             <input
               value="Login"
               type="submit"
-              className=" cursor-pointer xl:w-44 xl:h-11 bg-[#057176] xl:rounded-[16px] text-white text-sm"
+              className="   cursor-pointer w-[129px] ml-6 md:ml-0 md:w-44 h-11 mt-10 rounded-[16px] md:mt-0 bg-[#057176] xl:rounded-[16px] text-white text-sm"
             />
           </div>
         </form>
