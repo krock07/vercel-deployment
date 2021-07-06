@@ -109,7 +109,7 @@ export default function sneakpeak() {
 							</div>
 						</ul>
 					</div>
-					<div className="flex flex-col space-y-8 justify-center mb-6 ml-20 mt-20 md:mt-0 md:mb-10 md:mx-auto md:w-9/12 xl:mt-0 xl:mb-10 xl:mx-auto xl:w-9/12">
+					<div className="flex flex-col space-y-8 justify-center mb-6 mx-auto mt-20 md:mt-0 md:mb-10 md:mx-auto md:w-9/12 xl:mt-0 xl:mb-10 xl:mx-auto xl:w-9/12">
 						{/* rectangle 1 */}
 						<div className="flex xl:flex-row md:flex-row flex-col-reverse justify-between w-[312px] h-[446px] md:justify-center space-x-5 bg-[#eaf1f7] md:w-[888px] md:h-[386px] bg-opacity-30 rounded-[20px]">
 							<img
@@ -173,7 +173,7 @@ export default function sneakpeak() {
 								alt=""
 								className="w-[298.23px] h-[318px] md:w-[362px] md:h-[386px]"
 							/>
-							<div className="flex self-center md:w-[344px] md:h-[68px]">
+							<div className="flex self-center w-[264px] h-[96px] md:w-[344px] md:h-[68px]">
 								<p className="text-[20px] leading-[32px] font-bold md:mt-0 md:text-[24px] md:leading-[34px] text-[#f2762f] tracking-[0.02em]">
 									Share your conversations on social media
 								</p>
