@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import { useRouter } from "next/router";
 
-function Nav(props) {
+function AboutNav(props) {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const [user, setUser] = useState();
   const router = useRouter();
@@ -207,7 +207,7 @@ function Nav(props) {
   );
 }
 
-export default Nav;
+export default AboutNav;
 
 // import React, { useState } from "react";
 // import Link from "next/link";

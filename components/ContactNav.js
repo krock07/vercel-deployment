@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-const Nav = () => {
+const ContactNav = () => {
   const router = useRouter();
   const links = [
     {
@@ -129,4 +129,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default ContactNav;
