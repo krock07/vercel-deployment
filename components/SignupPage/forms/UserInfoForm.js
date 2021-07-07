@@ -16,10 +16,10 @@ const UserInfoFrom = (props) => {
   } = props;
 
   return (
-    <div className="xl:flex-col xl:flex xl:items-center xl:justify-around xl:py-48">
-      <div className=" mx-auto xl:w-[888px] xl:h-[846px] w-[85%] bg-white xl:flex-col xl:flex xl:items-center xl:justify-even rounded-[32px] xl:rounded-[4.35rem] mb-6 h-[670px]  ">
-        <div className="w-full  justify-start items-center flex xl:pl-20  mt-[120px]">
-          <h1 className=" py-5 pl-5 xl:text-lg xl:mb-8 text-lg font-semibold">
+    <div className=" pt-5 md:pt-32 xl:flex-col xl:flex xl:items-center xl:justify-around xl:py-48">
+      <div className=" mx-auto xl:w-[888px] xl:h-[846px] w-[85%] bg-white xl:flex-col xl:flex xl:items-center xl:justify-even rounded-[32px] xl:rounded-[4.35rem] mb-6 h-[670px] md:h-[786px]  ">
+        <div className=" w-full  justify-start items-center flex xl:pl-20  mt-[120px] xl:mt-20">
+          <h1 className=" py-5 pl-5 xl:text-lg xl:mb-8 text-lg font-semibold md:ml-8  lg:ml-10 md:pt-[7rem] xl:ml-0 md:mb-5">
             Create Your Account
           </h1>
         </div>

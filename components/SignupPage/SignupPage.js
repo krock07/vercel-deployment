@@ -106,7 +106,7 @@ export default function SignupPage() {
     overrides: {
       MuiTypography: {
         root: {
-          [defaultTheme.breakpoints.down("sm")]: {
+          [defaultTheme.breakpoints.down("xs")]: {
             backgroundColor: defaultTheme.palette.secondary.contrast,
             display: "none",
           },
@@ -114,7 +114,7 @@ export default function SignupPage() {
       },
       MuiStepLabel: {
         labelContainer: {
-          [defaultTheme.breakpoints.down("sm")]: {
+          [defaultTheme.breakpoints.down("xs")]: {
             display: "none",
           },
         },
@@ -134,11 +134,11 @@ export default function SignupPage() {
 
   const useStyles = makeStyles((theme) => ({
     root: {
-      [theme.breakpoints.down("sm")]: {
+      [theme.breakpoints.down("xs")]: {
         backgroundColor: "#f1f5f8",
 
         position: "relative",
-        top: "6rem",
+        top: "8rem",
       },
     },
   }));
@@ -147,7 +147,7 @@ export default function SignupPage() {
     <ThemeProvider theme={theme}>
       <>
         {activeStep !== 0 ? (
-          <div className="xl:mt-56 xl:px-80     xl:absolute xl:w-full 2xl:w-[75%] 2xl:ml-64 ">
+          <div className=" md:mt-[17rem] lg:ml-[.70rem] md:px-[6rem] xl:mt-[16rem] xl:px-80     md:absolute md:w-full 2xl:w-[75%] 2xl:ml-64 ">
             <Stepper
               className={classes.root}
               border-radius="10"
@@ -259,21 +259,21 @@ export default function SignupPage() {
                 <Form id={formId}>
                   {renderStepContent(activeStep)}
 
-                  <div className="flex justify-end ml-[3.5rem]  2xl:ml-[3%] ">
+                  <div className="flex justify-end ml-[3.5rem]  2xl:ml-[3%]  ">
                     {activeStep !== 0 && (
                       <button
                         type="button"
                         onClick={handleBack}
-                        className=" xl:bottom-[25.26rem] z-50 relative bottom-[88px] xl:left-[40rem] pointer xl:mr-80 xl:w-44 w-32 h-11 bg-none border-2 border-[#057176]  text-[#057176] rounded-2xl text-sm"
+                        className=" xl:bottom-[20.26rem] z-50 relative bottom-[88px] md:left-[26%] lg:left-[17rem] xl:left-[37rem] pointer xl:mr-80 xl:w-44 w-32 h-11 bg-none border-2 border-[#057176]  text-[#057176] rounded-2xl text-sm"
                       >
                         Previous
                       </button>
                     )}
-                    <div className=" md:left-[13%]  xl:m-1 xl:bottom-[25.56rem] lg:left-6 w-[60%] relative bottom-[5.5rem] left-1">
+                    <div className=" md:left-[30%]  xl:m-1 xl:bottom-[20.56rem] lg:left-[31%] xl:left-[4rem] w-[60%] relative bottom-[5.5rem] left-1">
                       <button
                         disabled={isSubmitting}
                         type="submit"
-                        className="  xl:ml-[19.5rem] mr-20 w-32 xl:mr-80 xl:w-44 h-11 rounded-2xl xl:rounded-[16px] bg-[#057176]  text-white text-sm"
+                        className="  xl:ml-[14.5rem] mr-20 w-32 xl:mr-80 xl:w-44 h-11 rounded-2xl xl:rounded-[16px] bg-[#057176]  text-white text-sm"
                       >
                         {isLastStep ? "Create Account" : "Next"}
                         {isSubmitting && (

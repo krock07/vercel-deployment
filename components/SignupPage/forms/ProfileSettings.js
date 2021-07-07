@@ -8,10 +8,10 @@ const ProfileSettings = (props) => {
     formField: { username, password },
   } = props;
   return (
-    <div className="xl:flex-col xl:flex xl:items-center xl:justify-around xl:py-48">
-      <div className="mx-auto xl:w-[888px] xl:h-[846px] w-[85%] bg-white xl:flex-col xl:flex xl:items-center xl:justify-even rounded-[32px] xl:rounded-[4.35rem] mb-6 h-[550px]  ">
+    <div className=" pt-5 md:pt-32 xl:flex-col xl:flex xl:items-center xl:justify-around xl:py-48">
+      <div className="  mx-auto xl:w-[888px] xl:h-[846px] w-[85%] bg-white xl:flex-col xl:flex xl:items-center xl:justify-even rounded-[32px] xl:rounded-[4.35rem] mb-6 h-[550px] lg:h-[650px] md:h-[650px]  ">
         <div className="w-full  justify-start items-center flex xl:pl-20  mt-[120px]">
-          <h1 className="py-5 pl-5 text-lg xl:text-lg font-semibold xl:mb-5">
+          <h1 className="py-5 pl-5 text-lg xl:text-lg font-semibold xl:mb-5 md:pt-28 lg:pt-32 md:ml-10 xl:ml-0 xl:pt-20">
             Profile Settings
           </h1>
         </div>

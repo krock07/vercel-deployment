@@ -70,11 +70,11 @@ export const About = () => {
     // </div>
     <div className="md:pb-28">
       <div className="flex-col flex md:flex-row  md:items-center lg:mt-49 lg:ml-24">
-        <div className="w-auto h-auto mx-auto md:ml-7 my-7 md:mt-44 lg:mr-24 xl:ml-2">
+        <div className="w-auto h-auto mx-auto md:ml-[2rem] my-7 md:mt-44 lg:ml-0 lg:mr-24 xl:ml-2">
           <img
             src="/pullUp.png"
             alt=""
-            className="w-[312px] h-[348px] object-contain md:w-[276px] md:h-[400px] lg:rounded-none xl:w-[547px] xl:h-[610px] "
+            className="w-[312px] h-[348px] object-contain md:w-[276px] md:h-[400px] lg:rounded-none lg:w-[547px] lg:h-[610px]  "
           />
           {/* <Image
           src="/image 60.png"
@@ -85,7 +85,7 @@ export const About = () => {
           className="rounded-[28px]"
         /> */}
         </div>
-        <div className=" md:mt-40 lg:ml-[55px] xl:ml-[160px] mx-8 2xl:ml-[25%]">
+        <div className=" md:mt-40 md:ml-[10rem] lg:ml-[55px] xl:ml-[160px] mx-8 2xl:ml-[25%]">
           <h3 className="text-[#f46514] text-xs uppercase md:text-base lg:text-[18px] lg:pb-6">
             about seventh ave
           </h3>

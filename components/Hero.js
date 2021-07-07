@@ -66,7 +66,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="flex absolute  inset-y-[242px] justify-between inset-x-[54px] w-80 md:inset-y-[428px] md:inset-x-[401px] lg:inset-y-[450px] lg:inset-x-[598px] xl:inset-x-[777px] 2xl:inset-x-[65.7%]">
+      <div className="flex absolute  inset-y-[242px] justify-between inset-x-[54px] w-80 md:inset-y-[428px] md:inset-x-[25rem] lg:inset-y-[450px] lg:inset-x-[598px] xl:inset-x-[777px] 2xl:inset-x-[65.7%]">
         <div className="w-auto">
           <img
             src="/bottom.png"
@@ -75,7 +75,7 @@ const Hero = () => {
           />
         </div>
       </div>
-      <div className="absolute inset-y-[425px] inset-x-6 md:inset-y-[300px] lg:inset-x-12 lg:inset-y-[260px] xl:inset-x-40 2xl:inset-x-[11%] ">
+      <div className="absolute inset-y-[425px] inset-x-6 md:inset-y-[300px] md:inset-x-[2rem] lg:inset-x-12 lg:inset-y-[260px] xl:inset-x-[6rem] 2xl:inset-x-[11%] ">
         <div className="pb-6">
           <h1 className="text-[26px] font-bold text-white lg:text-[48px]">
             Seventh Ave

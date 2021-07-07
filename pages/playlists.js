@@ -42,7 +42,7 @@ const podcast = () => {
       active: false,
       icon: <IoDocumentTextOutline />,
     },
-    { label: "Tweets", url: "/tweets", active: false, icon: <RiTwitterLine /> },
+    // { label: "Tweets", url: "/tweets", active: false, icon: <RiTwitterLine /> },
     {
       label: "Sneak Peak",
       url: "/sneakpeak",

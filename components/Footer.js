@@ -30,7 +30,7 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className=" w-auto ml-6 absolute  md:mt-8 md:z-10 lg:mt-0 lg:ml-32 xl:ml-[359px] overflow-hidden 2xl:ml-[44%]">
+        <div className=" w-auto ml-6 absolute  md:mt-8 md:z-10 md:ml-[11%] lg:mt-0 lg:ml-32 xl:ml-[359px] overflow-hidden 2xl:ml-[44%]">
           <img
             src="/footer.png"
             alt=""
@@ -38,7 +38,7 @@ const Footer = () => {
           />
         </div>
 
-        <div className="bg-[#086266] w-[416.61px] h-[175px]  ml-12 my-8 md:h-[215px]  md:mt-[55px] md:m-0 md:inset-x-[410px] md:absolute lg:inset-x-[600px] lg:rounded-none lg:h-[310px] lg:w-[424px] lg:transform xl:inset-x-[830px] xl:w-[608px] 2xl:inset-x-[69%]"></div>
+        <div className="bg-[#086266] w-[416.61px] h-[175px]  ml-12 my-8 md:h-[215px]  md:mt-[55px] md:m-0 md:inset-x-[465px] md:absolute lg:inset-x-[600px] lg:rounded-none lg:h-[310px] lg:w-[424px] lg:transform xl:inset-x-[830px] xl:w-[608px] 2xl:inset-x-[69%]"></div>
       </div>
 
       <hr className="w-4/5 mx-auto pb-8 md:w-11/12 lg:hidden" />
@@ -119,7 +119,7 @@ const Footer = () => {
             <Link href="/faqs">
               <li className="cursor-pointer">Faqs</li>
             </Link>
-            <li className="cursor-pointer">Partners</li>
+            {/* <li className="cursor-pointer">Partners</li> */}
           </ul>
         </div>
 
