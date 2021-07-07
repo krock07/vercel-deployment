@@ -9,9 +9,6 @@ module.exports = {
       fontFamily: {
         sans: ["Poppins", ...defaultTheme.fontFamily.sans],
       },
-      backgroundImage: (theme) => ({
-        "about-pattern": "url('/public/hero.png')",
-      }),
       outline: {
         primary: "2px solid #057176",
       },
@@ -21,6 +18,7 @@ module.exports = {
     extend: {
       textOpacity: ["visited"],
     },
+    mode: "jit",
   },
   plugins: [require("@tailwindcss/line-clamp")],
 };
