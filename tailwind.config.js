@@ -18,7 +18,6 @@ module.exports = {
     extend: {
       textOpacity: ["visited"],
     },
-    mode: "jit",
   },
   plugins: [require("@tailwindcss/line-clamp")],
 };
