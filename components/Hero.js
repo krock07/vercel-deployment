@@ -66,7 +66,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="flex absolute  inset-y-[242px] justify-between inset-x-[54px] w-80 md:inset-y-[428px] md:inset-x-[25rem] lg:inset-y-[450px] lg:inset-x-[598px] xl:inset-x-[777px] 2xl:inset-x-[65.7%]">
+      <div className="flex absolute  inset-y-[242px] justify-between inset-x-[54px] w-80 sm:inset-x-[18%] md:inset-y-[428px] md:inset-x-[25rem] lg:inset-y-[450px] lg:inset-x-[598px] xl:inset-x-[777px] 2xl:inset-x-[65.7%]">
         <div className="w-auto">
           <img
             src="/bottom.png"

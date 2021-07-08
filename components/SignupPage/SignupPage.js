@@ -269,7 +269,7 @@ export default function SignupPage() {
                         Previous
                       </button>
                     )}
-                    <div className=" md:left-[30%]  xl:m-1 xl:bottom-[20.56rem] lg:left-[31%] xl:left-[4rem] w-[60%] relative bottom-[5.5rem] left-1">
+                    <div className=" md:left-[30%]  xl:m-1 xl:bottom-[20.56rem] lg:left-[31%] xl:left-[7rem] w-[60%] relative bottom-[5.5rem] left-1">
                       <button
                         disabled={isSubmitting}
                         type="submit"

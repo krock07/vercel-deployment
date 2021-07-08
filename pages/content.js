@@ -122,7 +122,7 @@ const content = () => {
               </div>
             </ul>
           </div>
-          <div class=" mt-20 md:mt-0 md:flex md:relative md:top-[-19px] md:w-9/12   md:flex-wrap items-center  container mx-auto my-auto mb-10 ">
+          <div class=" mt-20 md:mt-0 md:flex md:relative md:top-[-19px] md:w-9/12   md:flex-wrap items-center  container mx-auto my-auto mb-10 xs:ml-5 ">
             {/* <!-- Card 1 --> */}
             <div class="md:m-4  rounded-md w-[312px] h-[409px] xl:w-[278px] lg:h-[409px] md:w-[216px] md:h-[438px] bg-[#C7d2da] bg-opacity-30 my-12 mx-8">
               {/* <!-- Card Image --> */}

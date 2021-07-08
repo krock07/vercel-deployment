@@ -10,14 +10,14 @@ const about = () => {
     <AboutLayout>
       <div className="relative  overflow-hidden">
         <img
-          className="h-96 w-[400px] object-cover object-right  sm:h-72 md:h-96 md:w-full lg:w-full lg:h-full xl:h-[605px]"
+          className="h-96 w-[400px] object-cover object-right   md:h-96 md:w-full lg:w-full lg:h-full xl:h-[605px]"
           src="/aboutHero.png"
           alt=""
         />
         <div className=" xl:mx-auto  xl:px-4 xl:relative xl:container xl:mt-14  ">
           <div className="md:absolute bg-red-600 md:bottom-[100px] md:left-14 xl:flex xl:flex-wrap xl:items-end xl:absolute xl:bottom-56 xl:left-2">
             <div className="w-full flex flex-col  justify-center items-center mx-auto md:w-[285px] xl:w-[500px] xl:px-4 xl:ml-auto xl:mr-auto xl:text-left xl:z-50">
-              <div className="xl:max-w-[27.81rem]  md:ml-[-25px]  md:max-w-xl absolute top-40 md:top-[-116px] max-w-[315px] xl:-top-52">
+              <div className="xl:max-w-[27.81rem]  md:ml-[-25px]  md:max-w-xl absolute top-40 md:top-[-116px] max-w-[310px] xl:-top-52">
                 <h1 className="text-white font-bold xl:font-semi-bold text-3xl md:text-2xl md:font-bold ">
                   Our Mission
                 </h1>
@@ -51,7 +51,7 @@ const about = () => {
               dinner table. You know, those places that just feel like home.{" "}
             </p>
           </div>
-          <div className="w-auto h-auto mx-auto md:ml-3 md:right-2 my-7 md:mt-44 lg:mr-24 xl:mr-32  relative xl:w-[1000px] xl:left-[24px] xl:top-[-1px] bottom-36">
+          <div className="w-auto h-auto mx-auto md:ml-3 md:right-2 my-7 md:mt-44 lg:mr-24 xl:mr-32  relative bottom-2 xl:w-[1000px] xl:left-[24px] xl:top-[-1px] md::bottom-36">
             <img
               src="/aboutCompany.png"
               alt=""
@@ -115,7 +115,7 @@ const about = () => {
           <div className="mb-10">
             <img
               src="/ladyTurban.png"
-              className="md:w-[376px] md:h-[376px] xl:pr-6 xl:w-[556px] xl:h-[524px] md:object-cover"
+              className=" pr-12 md:w-[376px] md:h-[376px] xl:pr-6 xl:w-[556px] xl:h-[524px] md:object-cover"
               alt=""
             />
           </div>
@@ -123,7 +123,7 @@ const about = () => {
             <h1 className="text-[#057176] mb-5  font-bold text-2xl xl:text-[24px] xl:font-bold xl:pb-12">
               Our goal is to...
             </h1>
-            <ul className="list-disc text-sm px-5 xl:text-[15px] ">
+            <ul className="list-disc text-sm px-6 md:p-5 xl:text-[15px] ">
               <li> Create a world wide community across the diaspora.</li>
               <li className="py-3">
                 Spotlight untold and nuanced Black narratives.

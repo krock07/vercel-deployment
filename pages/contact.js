@@ -68,12 +68,12 @@ const contact = () => {
 
   return (
     <ContactLayout>
-      <div className="mt-40 px-6 w-full xl:flex xl:justify-around md:flex md:justify-around">
+      <div className="mt-40 mb-8 md:mb-0 px-6 w-full xl:flex xl:justify-around md:flex md:justify-around">
         <div className="xl:mt-14">
           <h1 className=" font-sans pb-3 xl:text-[30px] xl:font-bold xl:mb-4 text-3xl font-bold">
             Contact us
           </h1>
-          <div className="pb-3 flex  items-center max-w-[204px] justify-between xl:flex xl:items-center xl:max-w-[220px] xl:justify-between">
+          <div className="pb-3 flex  items-center max-w-[220px] justify-between xl:flex xl:items-center xl:max-w-[220px] xl:justify-between">
             <i class="far fa-envelope"></i>
             <p className=" text-sm ">business@pullupon7th.com</p>
           </div>
@@ -81,10 +81,10 @@ const contact = () => {
             <RiPhoneLine className="text-xl" />
             <p className="text-sm">+1 (407) 737 2863</p>
           </div>
-          <p className="text-sm text-[#86868c] relative top-[36rem] text-left xl:top-[-79px] md:top-[10px]">
+          <p className="text-sm text-[#86868c] relative top-[42rem] text-left xl:top-[-79px] md:top-[10px]">
             Don’t forget to follow our social media.
           </p>
-          <div className=" relative top-[36.5rem] flex mb-10  xl:top-[-79px] md:top-[20px]  justify-between w-2/12 xl:flex xl:items-center xl:justify-between xl:max-w-[50px] xl:mt-10">
+          <div className=" relative top-[42.5rem] flex mb-0 md:mb-10  xl:top-[-79px] md:top-[20px]  justify-between w-2/12 xl:flex xl:items-center xl:justify-between xl:max-w-[50px] xl:mt-10">
             <a href="https://www.instagram.com/pullupon7th/">
               <i class="fab fa-instagram"></i>
             </a>
@@ -94,7 +94,7 @@ const contact = () => {
           </div>
         </div>
         <div>
-          <h1 className=" text-lg   font-bold xl:text-2xl xl:font-bold xl:mb-10">
+          <h1 className=" text-lg pb-5 md:pb-0   font-bold xl:text-2xl xl:font-bold xl:mb-10">
             Get in touch with us
           </h1>
 

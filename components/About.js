@@ -85,7 +85,7 @@ export const About = () => {
           className="rounded-[28px]"
         /> */}
         </div>
-        <div className=" md:mt-40 md:ml-[10rem] lg:ml-[55px] xl:ml-[160px] mx-8 2xl:ml-[25%]">
+        <div className=" sm:ml-12 md:mt-40 md:ml-[10rem] lg:ml-[55px] xl:ml-[160px] mx-8 2xl:ml-[25%]">
           <h3 className="text-[#f46514] text-xs uppercase md:text-base lg:text-[18px] lg:pb-6">
             about seventh ave
           </h3>

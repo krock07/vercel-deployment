@@ -104,13 +104,13 @@ const Interests = (props) => {
   return (
     <div className=" pt-5 md:pt-32 xl:flex-col xl:flex xl:items-center xl:justify-around xl:py-48">
       <div className="mx-auto xl:w-[888px] lg:h-[500px] xl:h-[546px] w-[85%] bg-white xl:flex-col xl:flex xl:items-center xl:justify-even rounded-[32px] xl:rounded-[4.35rem] mb-6 h-[350px] md:h-[500px]  ">
-        <div className="w-full mt-28  justify-start items-center flex xl:pl-16  xl:mt-[70px] xl:mb-12 md:pt-24 lg:pt-32 md:ml-10 ">
+        <div className="w-full mt-28  justify-start items-center flex xl:pl-16  xl:mt-[10px] xl:mb-12 md:pt-24 lg:pt-32 md:ml-10 ">
           {accountType === "creator" ? (
-            <h1 className=" py-5  pl-5 text-lg xl:text-lg xl:font-semibold">
+            <h1 className=" pt-5 pb-3  pl-5 text-lg xl:text-lg xl:font-semibold">
               What type of creator are you
             </h1>
           ) : (
-            <h1 className=" py-5  pl-5 text-lg xl:text-lg xl:font-semibold">
+            <h1 className=" pt-5 pb-1   pl-5 text-lg xl:pl-0 xl:text-lg xl:font-semibold">
               {" "}
               What are you interested in
             </h1>

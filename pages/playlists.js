@@ -109,6 +109,9 @@ const podcast = () => {
   const AUTH_URL =
     "https://accounts.spotify.com/authorize?client_id=6eb21b0156484d46b73a000f2113c546&response_type=code&redirect_uri=http://localhost:3000/playlists&scope=playlist-read-collaborative%20playlist-read-private";
 
+  const STAGING_AUTH_URL =
+    "https://accounts.spotify.com/authorize?client_id=6eb21b0156484d46b73a000f2113c546&response_type=code&redirect_uri=https://webstaging.herokuapp.com/playlists&scope=playlist-read-collaborative%20playlist-read-private";
+
   //   console.log(playlist);
 
   // const test = podcasts.forEach(function (podcast) {
@@ -183,9 +186,11 @@ const podcast = () => {
               </div>
             </ul>
           </div>
-          <div>{/* <a href={AUTH_URL}>login</a> */}</div>
+          <div>
+            <a href={STAGING_AUTH_URL}>login</a>
+          </div>
           {/* <SeventhPlaylist /> */}
-          <div className=" mt-20 md:m-0 md:flex md:mx-auto md:w-9/12 md:justify-around md:flex-wrap">
+          {/* <div className=" mt-20 md:m-0 md:flex md:mx-auto md:w-9/12 md:justify-around md:flex-wrap">
             {data.playlists.map((item, key) => {
               return (
                 <div className="flex flex-col  px-6 md:p-0  md:mb-6">
@@ -216,7 +221,7 @@ const podcast = () => {
                 </div>
               );
             })}
-          </div>
+          </div> */}
         </div>
       </div>
     </SignInLayout>

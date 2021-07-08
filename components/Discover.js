@@ -11,7 +11,7 @@ const Discover = () => {
         <p className="text-white md:text-left  text-center mx-6 text-sm md:text-base md:max-w-[320px] lg:text-[20px] lg:leading-normal lg:max-w-[380px] lg:font-light xl:text-[24px] xl:font-normal xl:max-w-[450px]  ">
           Use us a tool to share, connect, and learn together. Hop into
           experiences with friends to hang out or venture into spaces with
-          strangers to create new perspectives and connections
+          strangers to create new perspectives and connections.
         </p>
       </div>
       <div className=" w-auto absolute inset-y-[2016px] md:ml-[445px] md:inset-y-[1839.5px] lg:inset-y-[152.3rem] lg:ml-[503.5px] xl:ml-[750px] xl:inset-y-[2646px] 2xl:ml-[61.5%]">

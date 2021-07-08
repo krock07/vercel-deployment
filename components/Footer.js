@@ -38,7 +38,7 @@ const Footer = () => {
           />
         </div>
 
-        <div className="bg-[#086266] w-[416.61px] h-[175px]  ml-12 my-8 md:h-[215px]  md:mt-[55px] md:m-0 md:inset-x-[465px] md:absolute lg:inset-x-[600px] lg:rounded-none lg:h-[310px] lg:w-[424px] lg:transform xl:inset-x-[830px] xl:w-[608px] 2xl:inset-x-[69%]"></div>
+        <div className="bg-[#086266] w-[326.61px] h-[175px]  ml-12 my-8 sm:w-[364.61px] sm:h-[200px] md:h-[215px]  md:mt-[55px] md:m-0 md:inset-x-[465px] md:absolute lg:inset-x-[600px] lg:rounded-none lg:h-[310px] lg:w-[424px] lg:transform xl:inset-x-[830px] xl:w-[608px] 2xl:inset-x-[69%]"></div>
       </div>
 
       <hr className="w-4/5 mx-auto pb-8 md:w-11/12 lg:hidden" />
