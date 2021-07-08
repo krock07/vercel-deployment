@@ -80,9 +80,9 @@ export default function sneakpeak() {
 				/>
 
 				<div className=" flex  flex-col md:pl-6 md:flex md:flex-row  xl:pl-40">
-					<div className="  flex md:bg-[#eaf1f7] md:w-[216px] xl:w-[278px] md:h-[344px] md:rounded-[20px] md:items-center md:flex-col xl:flex xl:flex-col xl:items-center md:bg-opacity-30">
+					<div className="flex no-scrollbar overflow-x-auto md:bg-[#eaf1f7] md:w-[216px] xl:w-[278px] md:h-[344px] md:rounded-[20px] md:items-center md:flex-col xl:flex xl:flex-col xl:items-center md:bg-opacity-30">
 						<ul className=" border-b-2 border-[#222222] border-opacity-10 md:border-none md:mt-6 flex  md:flex-col md:items-center md:justify-center">
-							<div className=" flex md:flex-col   xl:flex-col xl:justify-end">
+							<div className=" flex md:flex-col xl:flex-col xl:justify-end">
 								{links.map((el, index) => {
 									console.log(el.url);
 									return (
@@ -91,7 +91,7 @@ export default function sneakpeak() {
 												<li
 													className={`${
 														router.asPath === el.url
-															? " border-b-2  border-[#057176] lg:px-6 2xl:px-10 md:p-0 xl:px-7 md:py-[7px] md:mb-4 md:hover:text-white md:text-white md:w-[184px] cursor-pointer xl:w-[230px] h-[52px] md:bg-[#057176] md:rounded-[10px] text-sm "
+															? " border-b-2 whitespace-nowrap border-[#057176] lg:px-6 2xl:px-10 md:p-0 xl:px-7 md:py-[7px] md:mb-4 md:hover:text-white md:text-white md:w-[184px] cursor-pointer xl:w-[230px] h-[52px] md:bg-[#057176] md:rounded-[10px] text-sm "
 															: "  lg:px-6 2xl:px-10 xl:px-7 md:mb-4 hover:text-[#057176] text-black  cursor-pointer"
 													}`}
 												>
@@ -109,7 +109,7 @@ export default function sneakpeak() {
 							</div>
 						</ul>
 					</div>
-					<div className="flex flex-col space-y-8 justify-center mb-6 ml-20 mt-20 md:mt-0 md:mb-10 md:mx-auto md:w-9/12 xl:mt-0 xl:mb-10 xl:mx-auto xl:w-9/12">
+					<div className="flex flex-col space-y-8 justify-center mb-6 mx-auto mt-20 md:mt-0 md:mb-10 md:mx-auto md:w-9/12 xl:mt-0 xl:mb-10 xl:mx-auto xl:w-9/12">
 						{/* rectangle 1 */}
 						<div className="flex xl:flex-row md:flex-row flex-col-reverse justify-between w-[312px] h-[446px] md:justify-center space-x-5 bg-[#eaf1f7] md:w-[888px] md:h-[386px] bg-opacity-30 rounded-[20px]">
 							<img
@@ -173,7 +173,7 @@ export default function sneakpeak() {
 								alt=""
 								className="w-[298.23px] h-[318px] md:w-[362px] md:h-[386px]"
 							/>
-							<div className="flex self-center md:w-[344px] md:h-[68px]">
+							<div className="flex self-center w-[264px] h-[96px] md:w-[344px] md:h-[68px]">
 								<p className="text-[20px] leading-[32px] font-bold md:mt-0 md:text-[24px] md:leading-[34px] text-[#f2762f] tracking-[0.02em]">
 									Share your conversations on social media
 								</p>
