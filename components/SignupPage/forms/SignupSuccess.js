@@ -86,7 +86,7 @@ const SignupSuccess = () => {
                 <div className="sm:flex sm:items-start">
                   <div className="xl:mt-3 mt-6 text-center sm:mt-0 sm:ml-4 sm:text-left">
                     <h1 className="xl:text-5xl text-4xl text-center mb-5">
-                      Congratulations!!!
+                      Congratulations!
                     </h1>
                     <Dialog.Title
                       as="h3"
