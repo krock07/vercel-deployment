@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 const Footer = () => {
 	return (
-		<div className="bg-[#057176] h-[869px] w-full md:h-[584px]">
+		<div className="overflow-hidden bg-[#057176] h-[869px] w-full md:h-[584px]">
 			<div className="md:flex md:pt-8 pb-6">
 				<div className="flex-col flex justify-between items-center md:items-start md:ml-7 md:max-w-sm xl:ml-40">
 					<div className="py-7 items-center lg:w-[639px] lg:mt-16">
