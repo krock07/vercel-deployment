@@ -126,6 +126,9 @@ const podcast = () => {
         <h1 className="  relative top-36 ml-5 md:top-[-28px] md:left-60 xl:left-0  xl:top-[3px] xl:ml-[30rem] md:text-[20px] md:font-medium pb-6 2xl:left-[3%]">
           Keep your Ear to the Streets
         </h1>
+        <div>
+          <a href={STAGING_AUTH_URL}>login in</a>
+        </div>
 
         <div className=" flex  flex-col md:pl-6 md:flex md:flex-row  xl:pl-40">
           <div className="  flex md:bg-[#eaf1f7] md:w-[216px]  xl:w-[278px] md:h-[344px] md:rounded-[20px] md:items-center md:flex-col xl:flex xl:flex-col xl:items-center md:bg-opacity-30">

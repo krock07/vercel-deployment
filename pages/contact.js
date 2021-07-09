@@ -42,34 +42,102 @@ const contact = () => {
   //   };
   // };
 
-  const submitEmail = async (e) => {
+  // const submitEmail = async (e) => {
+  //   e.preventDefault();
+  //   console.log({ values });
+  //   const response = await fetch("https://api.seventhave.io/func/contact", {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-type": "application/json",
+  //     },
+  //     body: JSON.stringify({ values }),
+  //   })
+  //     .then((res) => res.json())
+  //     .then(async (res) => {
+  //       const resData = await res;
+  //       console.log(resData);
+  //       if (resData.status === "success") {
+  //         alert("Message Sent");
+  //       } else if (resData.status === "fail") {
+  //         alert("Message failed to send");
+  //       }
+  //     })
+  //     .then(() => {
+  //       setValues({
+  //         name: "",
+  //         subject: "",
+  //         email: "",
+  //         type: "",
+  //         message: "",
+  //       });
+  //     });
+  // };
+  // const submitEmail = () => {
+  //   fetch("https://api.seventhave.io/func/contact", {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     body: JSON.stringify({ values }),
+  //   })
+  //     .then((res) => res.json())
+  //     .then((res) => {
+  //       const resData = res;
+  //       console.log(resData);
+  //       if (resData.status === "success") {
+  //         alert("Message Sent");
+  //       } else if (resData.status === "fail") {
+  //         alert("Message failed to send");
+  //       }
+  //     });
+  // };
+  // async function submitEmail(e) {
+  //   e.preventDefault();
+
+  //   await fetch("https://api.seventhave.io/func/contact", {
+  //     method: "POST",
+  //     body: JSON.stringify({ values }),
+  //   })
+  //     .then((response) => response.json())
+  //     .then((data) => console.log(data));
+  // }
+
+  // const submitEmail = async (e) => {
+  //   e.preventDefault();
+  //   console.log({ value });
+  // const response = await fetch("https://api.seventhave.io/func/contact", {
+  //   method: "POST",
+  //   headers: {
+  //     "Content-type": "application/json",
+  //   },
+  //   body: JSON.stringify({ values }),
+  // });
+  //   const resData = await response.json();
+  //   if (resData.status === 'success'){
+  //     alert("Message Sent.");
+  //     this.resetForm()
+  // }else if(resData.status === 'fail'){
+  //     alert("Message failed to send.")
+  // }
+  // };
+  const submitEmail = (e) => {
     e.preventDefault();
-    console.log({ values });
-    fetch("http://localhost:3000/func/contact", {
+    fetch("https://api.seventhave.io/func/contact", {
       method: "POST",
       headers: {
-        "Content-type": "application/json",
+        "Content-Type": "application/json",
       },
-      body: JSON.stringify({ values }),
+      body: JSON.stringify({
+        name: values.name,
+        email: values.email,
+        subject: values.subject,
+        message: values.message,
+        type: values.type,
+      }),
     })
-      .then((res) => res.json())
-      .then(async (res) => {
-        const resData = await res;
-        console.log(resData);
-        if (resData.status === "success") {
-          alert("Message Sent");
-        } else if (resData.status === "fail") {
-          alert("Message failed to send");
-        }
-      })
-      .then(() => {
-        setValues({
-          name: "",
-          subject: "",
-          email: "",
-          type: "",
-          message: "",
-        });
+      .then((response) => response.json())
+      .then((data) => {
+        alert("Message Sent");
       });
   };
 
@@ -120,7 +188,7 @@ const contact = () => {
                   placeholder="Type your first name"
                   type="text"
                   name="name"
-                  value={values.firstName}
+                  // value={values.firstName}
                   onChange={handleInputChange}
                   id=""
                   className="appearance-none block w-full text-black border  rounded-lg py-3 px-4 mb-3 leading-tight focus:outline-none focus:ring-1 focus:ring-[#057176] focus:border-[#057176] bg-[#eaf1f7]  bg-opacity-30 focus:bg-white"
@@ -152,7 +220,7 @@ const contact = () => {
                 Email
               </label>
               <input
-                value={values.email}
+                // value={values.email}
                 onChange={handleInputChange}
                 placeholder="Type your email"
                 type="email"
@@ -167,7 +235,7 @@ const contact = () => {
                 Subject
               </label>
               <input
-                value={values.subject}
+                // value={values.subject}
                 onChange={handleInputChange}
                 placeholder="Subject"
                 type="text"
@@ -185,7 +253,7 @@ const contact = () => {
               </label>
               <select
                 name="type"
-                value={values.type}
+                // value={values.type}
                 onChange={handleInputChange}
                 id=""
                 className=" relative w-full border rounded-md shadow-sm pl-3 pr-10 py-3 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-[#057176] focus:border-[#057176] bg-[#eaf1f7] bg-opacity-30 sm:text-sm"
@@ -207,7 +275,7 @@ const contact = () => {
               <textarea
                 placeholder="Tell us what's on your mind"
                 name="message"
-                value={values.message}
+                // value={values.message}
                 onChange={handleInputChange}
                 id=""
                 cols="30"
