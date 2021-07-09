@@ -32,7 +32,7 @@ export default function sneakpeak() {
       active: false,
       icon: <GrDocumentText />,
     },
-    { label: "Tweets", url: "/tweets", active: false, icon: <RiTwitterLine /> },
+    // { label: "Tweets", url: "/tweets", active: false, icon: <RiTwitterLine /> },
     {
       label: "Sneak Peak",
       url: "/sneakpeak",
