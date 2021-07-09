@@ -21,7 +21,7 @@ const OurMission = () => {
           communities at scale.
         </p>
       </div>
-      <div className="w-auto absolute inset-y-[2595px] md:mr-80 md:inset-y-[2295px] lg:inset-y-[198.1rem] lg:left-14 xl:inset-y-[505.5%] 2xl:inset-y-[378.1%] 2xl:left-36  ">
+      <div className="w-auto absolute inset-y-[2595px] md:mr-80 md:inset-y-[2295px] lg:inset-y-[198.1rem] lg:left-14 xl:inset-y-[506.9%] 2xl:inset-y-[378.1%] 2xl:left-36  ">
         <img
           src="/Create.png"
           alt=""

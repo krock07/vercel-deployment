@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import ContactLayout from "../components/ContactLayout";
 import { RiPhoneLine } from "react-icons/ri";
+import axios from "axios";
 
 const contact = () => {
   const [values, setValues] = useState({
-    firstName: "",
-    lastName: "",
+    name: "",
     email: "",
-    typeInquiry: "",
-    note: "",
+    type: "",
+    subject: "",
+    message: "",
   });
 
   const handleInputChange = (e) => {
@@ -21,6 +22,12 @@ const contact = () => {
       [name]: value,
     });
   };
+  // const handleInputChange = (e) => {
+  //   setValues((prevState) => ({
+  //     ...prevState,
+  //     [e.target.name]: e.target.value,
+  //   }));
+  // };
 
   // const sendMessage = (e) => {
   //   e.preventDefault();
@@ -37,13 +44,13 @@ const contact = () => {
 
   const submitEmail = async (e) => {
     e.preventDefault();
-    console.log({ mailerState });
-    const response = await fetch("http://localhost:3001/send", {
+    console.log({ values });
+    fetch("http://localhost:3000/func/contact", {
       method: "POST",
       headers: {
         "Content-type": "application/json",
       },
-      body: JSON.stringify({ mailerState }),
+      body: JSON.stringify({ values }),
     })
       .then((res) => res.json())
       .then(async (res) => {
@@ -57,11 +64,11 @@ const contact = () => {
       })
       .then(() => {
         setValues({
-          firstName: "",
-          lastName: "",
+          name: "",
+          subject: "",
           email: "",
-          typeInquiry: "",
-          note: "",
+          type: "",
+          message: "",
         });
       });
   };
@@ -98,7 +105,7 @@ const contact = () => {
             Get in touch with us
           </h1>
 
-          <form>
+          <form onSubmit={submitEmail}>
             <div className="  xl:flex xl:justify-between xl:w-[510px] xl:mb-5">
               {/* <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0"> */}
 
@@ -107,19 +114,19 @@ const contact = () => {
                   htmlFor="name"
                   className="block  tracking-wide text-black text-xs font-bold mb-2"
                 >
-                  First Name
+                  Name
                 </label>
                 <input
                   placeholder="Type your first name"
                   type="text"
-                  name="firstName"
+                  name="name"
                   value={values.firstName}
                   onChange={handleInputChange}
                   id=""
                   className="appearance-none block w-full text-black border  rounded-lg py-3 px-4 mb-3 leading-tight focus:outline-none focus:ring-1 focus:ring-[#057176] focus:border-[#057176] bg-[#eaf1f7]  bg-opacity-30 focus:bg-white"
                 />
               </div>
-              <div className="xl:flex xl:flex-col">
+              {/* <div className="xl:flex xl:flex-col">
                 <label
                   htmlFor="name"
                   className="block  tracking-wide text-black text-xs font-bold mb-2"
@@ -135,7 +142,7 @@ const contact = () => {
                   id=""
                   className="appearance-none block w-full text-black border  rounded-lg py-3 px-4 mb-3 leading-tight focus:outline-none focus:ring-1 focus:ring-[#057176] focus:border-[#057176] bg-[#eaf1f7] bg-opacity-30 focus:bg-white"
                 />
-              </div>
+              </div> */}
             </div>
             <div className="xl:flex xl:flex-col">
               <label
@@ -153,17 +160,32 @@ const contact = () => {
                 id=""
                 className="appearance-none block w-full text-black border  rounded-lg py-3 px-4 mb-3 leading-tight focus:outline-none focus:ring-1 focus:ring-[#057176] focus:border-[#057176] bg-[#eaf1f7] bg-opacity-30 focus:bg-white"
               />
+              <label
+                htmlFor="name"
+                className="block  tracking-wide text-black text-xs font-bold mb-2"
+              >
+                Subject
+              </label>
+              <input
+                value={values.subject}
+                onChange={handleInputChange}
+                placeholder="Subject"
+                type="text"
+                name="subject"
+                id=""
+                className="appearance-none block w-full text-black border  rounded-lg py-3 px-4 mb-3 leading-tight focus:outline-none focus:ring-1 focus:ring-[#057176] focus:border-[#057176] bg-[#eaf1f7] bg-opacity-30 focus:bg-white"
+              />
             </div>
             <div className="xl:flex-col xl:flex mb-5">
               <label
                 htmlFor="typeInquiry"
                 className="block  tracking-wide text-black text-xs font-bold mb-2"
               >
-                Type Inquiry
+                Type
               </label>
               <select
-                name="typeInquiry"
-                value={values.typeInquiry}
+                name="type"
+                value={values.type}
                 onChange={handleInputChange}
                 id=""
                 className=" relative w-full border rounded-md shadow-sm pl-3 pr-10 py-3 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-[#057176] focus:border-[#057176] bg-[#eaf1f7] bg-opacity-30 sm:text-sm"
@@ -180,12 +202,12 @@ const contact = () => {
                 htmlFor="note"
                 className="block  tracking-wide text-black text-xs font-bold mb-2"
               >
-                Note
+                Message
               </label>
               <textarea
                 placeholder="Tell us what's on your mind"
-                name="note"
-                value={values.note}
+                name="message"
+                value={values.message}
                 onChange={handleInputChange}
                 id=""
                 cols="30"

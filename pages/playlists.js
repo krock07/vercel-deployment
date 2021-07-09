@@ -186,9 +186,7 @@ const podcast = () => {
               </div>
             </ul>
           </div>
-          <div>
-            <a href={STAGING_AUTH_URL}>login</a>
-          </div>
+
           {/* <SeventhPlaylist /> */}
           <div className=" mt-20 md:m-0 md:flex md:mx-auto md:w-9/12 md:justify-around md:flex-wrap">
             {data.playlists.map((item, key) => {
