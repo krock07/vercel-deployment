@@ -16,7 +16,7 @@ import { searchUser } from "../middleware/utilities";
 import spotifyLogin from "./spotifyLogin";
 
 const STAGING_AUTH_URL =
-  "https://accounts.spotify.com/authorize?client_id=6eb21b0156484d46b73a000f2113c546&response_type=code&redirect_uri=https://webstaging.herokuapp.com&scope=playlist-read-collaborative%20playlist-read-private";
+  "https://accounts.spotify.com/authorize?client_id=6eb21b0156484d46b73a000f2113c546&response_type=code&redirect_uri=https://pedantic-lamport-ded04a.netlify.app/&scope=playlist-read-collaborative%20playlist-read-private";
 
 const podcast = () => {
   const cred = Credentials();
