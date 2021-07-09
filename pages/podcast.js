@@ -15,6 +15,9 @@ import Link from "next/link";
 import { searchUser } from "../middleware/utilities";
 import spotifyLogin from "./spotifyLogin";
 
+const STAGING_AUTH_URL =
+  "https://accounts.spotify.com/authorize?client_id=6eb21b0156484d46b73a000f2113c546&response_type=code&redirect_uri=https://webstaging.herokuapp.com&scope=playlist-read-collaborative%20playlist-read-private";
+
 const podcast = () => {
   const cred = Credentials();
   const router = useRouter();
@@ -123,7 +126,9 @@ const podcast = () => {
         <h1 className="  relative top-36 ml-5 md:top-[-28px] md:left-60 xl:left-0  xl:top-[3px] xl:ml-[30rem] md:text-[20px] md:font-medium pb-6 2xl:left-[3%]">
           Keep your Ear to the Streets
         </h1>
-        <spotifyLogin />
+        <div>
+          <a href={STAGING_AUTH_URL}>login</a>
+        </div>
 
         <div className=" flex  flex-col md:pl-6 md:flex md:flex-row  xl:pl-40">
           <div className="  flex md:bg-[#eaf1f7] md:w-[216px]  xl:w-[278px] md:h-[344px] md:rounded-[20px] md:items-center md:flex-col xl:flex xl:flex-col xl:items-center md:bg-opacity-30">
