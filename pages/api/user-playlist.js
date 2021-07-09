@@ -24,7 +24,7 @@ const getAccessToken = async () => {
     },
     body: querystring.stringify({
       grant_type: "refresh_token",
-      refresh_token: SPOTIFY_REFRESH_TOKEN,
+      refresh_token: STAGING_REFRESH_TOKEN,
     }),
   });
 
