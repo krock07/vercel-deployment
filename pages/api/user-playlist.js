@@ -1,8 +1,12 @@
 import querystring from "querystring";
 const SpotifyWebApi = require("spotify-web-api-node");
 
-const { SPOTIFY_CLIENT_SECRET, SPOTIFY_REFRESH_TOKEN, SPOTIFY_CLIENT_ID } =
-  process.env;
+const {
+  SPOTIFY_CLIENT_SECRET,
+  SPOTIFY_REFRESH_TOKEN,
+  SPOTIFY_CLIENT_ID,
+  STAGING_REFRESH_TOKEN,
+} = process.env;
 
 const basic = Buffer.from(
   `${SPOTIFY_CLIENT_ID}:${SPOTIFY_CLIENT_SECRET}`

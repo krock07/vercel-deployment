@@ -13,6 +13,7 @@ import { IoDocumentTextOutline } from "react-icons/io5";
 
 import Link from "next/link";
 import { searchUser } from "../middleware/utilities";
+import spotifyLogin from "./spotifyLogin";
 
 const podcast = () => {
   const cred = Credentials();
@@ -115,6 +116,7 @@ const podcast = () => {
           <h3 className=" text-[26px] font-semibold w-[250px] leading-8 ml-5 md:w-[550px] xl:text-[30px] xl:w-[550px] xl:m-0 xl:font-semibold relative bottom-4 2xl:ml-[3%]">
             Handpicked Vibes While You Wait
           </h3>
+          <spotifyLogin />
         </div>
         <h1 className=" ml-5  mt-10 text-[20px] xl:font-medium xl:ml-[10.5rem] relative xl:top-8 ">
           Content
