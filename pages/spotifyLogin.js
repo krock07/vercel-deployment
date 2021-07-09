@@ -8,9 +8,7 @@ const STAGING_AUTH_URL =
 function spotifyLogin() {
   return (
     <div>
-      <a href={STAGING_AUTH_URL}>
-        <button>Login</button>
-      </a>
+      <a href={STAGING_AUTH_URL}>Login</a>
     </div>
   );
 }

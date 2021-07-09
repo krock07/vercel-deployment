@@ -116,7 +116,6 @@ const podcast = () => {
           <h3 className=" text-[26px] font-semibold w-[250px] leading-8 ml-5 md:w-[550px] xl:text-[30px] xl:w-[550px] xl:m-0 xl:font-semibold relative bottom-4 2xl:ml-[3%]">
             Handpicked Vibes While You Wait
           </h3>
-          <spotifyLogin />
         </div>
         <h1 className=" ml-5  mt-10 text-[20px] xl:font-medium xl:ml-[10.5rem] relative xl:top-8 ">
           Content
@@ -124,6 +123,7 @@ const podcast = () => {
         <h1 className="  relative top-36 ml-5 md:top-[-28px] md:left-60 xl:left-0  xl:top-[3px] xl:ml-[30rem] md:text-[20px] md:font-medium pb-6 2xl:left-[3%]">
           Keep your Ear to the Streets
         </h1>
+        <spotifyLogin />
 
         <div className=" flex  flex-col md:pl-6 md:flex md:flex-row  xl:pl-40">
           <div className="  flex md:bg-[#eaf1f7] md:w-[216px]  xl:w-[278px] md:h-[344px] md:rounded-[20px] md:items-center md:flex-col xl:flex xl:flex-col xl:items-center md:bg-opacity-30">
