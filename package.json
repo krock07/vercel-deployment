@@ -48,6 +48,7 @@
     "spotify-web-api-node": "^5.0.2",
     "swr": "^0.5.6",
     "tailwindcss": "^2.1.4",
+    "unfetch": "^4.2.0",
     "webpack": "^5.38.1",
     "yup": "^0.32.9"
   },

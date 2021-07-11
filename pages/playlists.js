@@ -227,10 +227,3 @@ const podcast = () => {
 };
 
 export default podcast;
-
-// const creds = Credentials();
-// var credentials = {
-//   clientId: creds.ClientId,
-//   clientSecret: creds.ClientSecret,
-//   redirectUri: 'http://localhost:3000'
-// };
