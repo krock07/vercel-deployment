@@ -187,7 +187,7 @@ const podcast = () => {
           </div>
 
           {/* <SeventhPlaylist /> */}
-          {/* <div className=" mt-20 md:m-0 md:flex md:mx-auto md:w-9/12 md:justify-around md:flex-wrap">
+          <div className=" mt-20 md:m-0 md:flex md:mx-auto md:w-9/12 md:justify-around md:flex-wrap">
             {data.playlists.map((item, key) => {
               return (
                 <div className="flex flex-col  px-6 md:p-0  md:mb-6">
@@ -218,7 +218,7 @@ const podcast = () => {
                 </div>
               );
             })}
-          </div> */}
+          </div>
         </div>
       </div>
     </SignInLayout>
