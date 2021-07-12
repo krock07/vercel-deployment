@@ -50,7 +50,7 @@ function Radio(props) {
               Individual Account
             </h1>
             <p className="px-5 leading-[20px] text-sm text-center xl:max-w-xs xl:text-[#667682] xl:ml-[5%]">
-              A space that empowers your voice, your power, and your people.
+              Best for enjoying basic experience
             </p>
           </span>
         </span>
@@ -72,7 +72,8 @@ function Radio(props) {
               Creator Account
             </h1>
             <p className="px-5 leading-[20px] text-sm text-center xl:max-w-xs xl:text-[#667682] xl:ml-[5%]">
-              A space that empowers your voice, your power, and your people.
+              Best for content creators, public figures, artists, influencers,
+              brands, and organizations
             </p>
           </span>
         </span>
