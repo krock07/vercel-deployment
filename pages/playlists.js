@@ -107,7 +107,7 @@ const podcast = () => {
   //   console.log(playlist);
 
   const AUTH_URL =
-    "https://accounts.spotify.com/authorize?client_id=6eb21b0156484d46b73a000f2113c546&response_type=code&redirect_uri=http://localhost:3000/playlists&scope=playlist-read-collaborative%20playlist-read-private";
+    "https://accounts.spotify.com/authorize?client_id=6eb21b0156484d46b73a000f2113c546&response_type=code&redirect_uri=https://vercel-deployment-pearl.vercel.app&scope=playlist-read-collaborative%20playlist-read-private";
 
   const STAGING_AUTH_URL =
     "https://accounts.spotify.com/authorize?client_id=6eb21b0156484d46b73a000f2113c546&response_type=code&redirect_uri=https://webstaging.herokuapp.com/playlists&scope=playlist-read-collaborative%20playlist-read-private";
@@ -127,7 +127,7 @@ const podcast = () => {
   //       : " lg:px-6 2xl:px-10 xl:px-7 xl:mb-4 hover:text-white text-black  cursor-pointer"
   //   }`}
   // >
-  const { data } = useSWR("/api/user-playlist", fetcher);
+  const { data, error } = useSWR("/api/user-playlist", fetcher);
 
   if (error) return <div>Failed to load</div>;
   if (!data) return <div>Loading...</div>;
@@ -187,7 +187,7 @@ const podcast = () => {
           </div>
 
           {/* <SeventhPlaylist /> */}
-          <div className=" mt-20 md:m-0 md:flex md:mx-auto md:w-9/12 md:justify-around md:flex-wrap">
+          {/* <div className=" mt-20 md:m-0 md:flex md:mx-auto md:w-9/12 md:justify-around md:flex-wrap">
             {data.playlists.map((item, key) => {
               return (
                 <div className="flex flex-col  px-6 md:p-0  md:mb-6">
@@ -218,7 +218,7 @@ const podcast = () => {
                 </div>
               );
             })}
-          </div>
+          </div> */}
         </div>
       </div>
     </SignInLayout>

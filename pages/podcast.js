@@ -15,7 +15,7 @@ import Link from "next/link";
 import { searchUser } from "../middleware/utilities";
 import spotifyLogin from "./spotifyLogin";
 
-const STAGING_AUTH_URL =
+const AUTH_URL =
   "https://accounts.spotify.com/authorize?client_id=6eb21b0156484d46b73a000f2113c546&response_type=code&redirect_uri=https://vercel-deployment-pearl.vercel.app&scope=playlist-read-collaborative%20playlist-read-private";
 
 const podcast = () => {
@@ -127,7 +127,7 @@ const podcast = () => {
           Keep your Ear to the Streets
         </h1>
         <div>
-          <a href={STAGING_AUTH_URL}>login in</a>
+          <a href={AUTH_URL}>login in</a>
         </div>
 
         <div className=" flex  flex-col md:pl-6 md:flex md:flex-row  xl:pl-40">
