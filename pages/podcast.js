@@ -16,7 +16,7 @@ import { searchUser } from "../middleware/utilities";
 import spotifyLogin from "./spotifyLogin";
 
 const AUTH_URL =
-  "https://accounts.spotify.com/authorize?client_id=6eb21b0156484d46b73a000f2113c546&response_type=code&redirect_uri=https://vercel-deployment-pearl.vercel.app&scope=playlist-read-collaborative%20playlist-read-private";
+  "https://accounts.spotify.com/authorize?client_id=87bf8496481d4b8f98ec9dda38e2a370&response_type=code&redirect_uri=https://vercel-deployment-pearl.vercel.app&scope=playlist-read-collaborative%20playlist-read-private";
 
 const podcast = () => {
   const cred = Credentials();
