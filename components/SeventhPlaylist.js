@@ -10,5 +10,7 @@ export default function SeventhPlaylist() {
     return null;
   }
 
-  return data.playlists.map((playlist, index) => <Playlist {...playlist} />);
+  return data.playlists.map((playlist, index) => (
+    <Playlist {...playlist} key={playlist.songUrl} />
+  ));
 }
