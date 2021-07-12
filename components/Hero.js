@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Popover, Transition } from "@headlessui/react";
+import styles from "./Hero.module.scss";
 
 const Hero = () => {
   return (
@@ -33,7 +34,7 @@ const Hero = () => {
     //       </div>
     //     </div>
     <div className="bg-[#057176] h-[41.625rem] w-screen lg:h-[50rem] overflow-x-hidden ">
-      <div className="flex  w-80 mx-auto absolute inset-y-32  inset-x-6 md:w-screen md:absolute md:inset-x-[45%] md:inset-y-[13.5625rem] lg:inset-y-[120px] lg:inset-x-[43%] 2xl:inset-x-[57.5%]  ">
+      <div className="flex  mx-auto absolute inset-y-32  inset-x-6  md:w-screen md:absolute md:inset-x-[45%] md:inset-y-[13.5625rem] lg:inset-y-[120px] lg:inset-x-[43%] 2xl:inset-x-[57.5%]  ">
         <div className="w-auto ">
           <img
             src="/topLeft.png"
@@ -54,19 +55,19 @@ const Hero = () => {
             <img
               src="/leeft.jpg"
               alt=""
-              className=" w-[116.95px]  md:h-[175px] md:w-[233.42px] lg:w-[368px] lg:h-[276px] object-cover object-right-bottom "
+              className=" w-[116.95px]  md:h-[175px]  md:w-[233.42px] lg:w-[368px] lg:h-[276px] object-cover object-right-bottom "
             />
           </div>
-          <div className="w-auto mb-[340px] lg:mb-[700px]">
+          <div className="w-auto mb-[340px] lg:mb-[700px]  sm:absolute sm:inset-y-[17%] lg:inset-y-[60%] xl:inset-y-[59.5%] 2xl:inset-y-[39%]">
             <img
               src="/bottomRight.png"
               alt=""
-              className="w-[167.48px] h-[133.8px] object-cover  md:w-[334.28px] md:h-[267.04px] md:mt-1 md:transform md:scale-x-[-1] lg:w-[527px lg:h-[421px] lg:object-right lg:transform-none xl:transform xl:scale-x-[-1]"
+              className="w-[167.48px] h-[133.8px]   object-cover  md:w-[334.28px] md:h-[267.04px] md:mt-1 md:transform md:scale-x-[-1] lg:w-[527px lg:h-[421px] lg:object-right lg:transform-none xl:transform xl:scale-x-[-1]"
             />
           </div>
         </div>
       </div>
-      <div className="flex absolute  inset-y-[242px] justify-between inset-x-[54px] w-80 sm:inset-x-[18%] md:inset-y-[428px] md:inset-x-[25rem] lg:inset-y-[450px] lg:inset-x-[598px] xl:inset-x-[777px] 2xl:inset-x-[65.7%]">
+      <div className="flex absolute  inset-y-[243px] justify-between inset-x-[14.5%] w-80 sm:inset-x-[12.9%] md:inset-y-[428px] md:inset-x-[25rem] lg:inset-y-[450px] lg:inset-x-[598px] xl:inset-x-[777px] 2xl:inset-x-[65.7%]">
         <div className="w-auto">
           <img
             src="/bottom.png"
@@ -82,7 +83,7 @@ const Hero = () => {
           </h1>
         </div>
         <div className="pb-6">
-          <p className="text-white text-base leading-loose max-w-[300px] lg:text-2xl lg:max-w-[350px] lg:break-all">
+          <p className="text-white text-base leading-loose max-w-[300px] lg:text-2xl lg:max-w-[340px] lg:break-all">
             The digital neighborhood for our community.
           </p>
         </div>

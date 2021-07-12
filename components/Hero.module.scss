@@ -1,0 +1,10 @@
+.photo {
+  width: auto;
+  margin-bottom: 340px;
+}
+@media only screen and (min-width: 360px) and (max-width: 767px) {
+  .photo {
+    inset: 15.5% 0 0 50.5%;
+    position: absolute;
+  }
+}
